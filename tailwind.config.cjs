@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['"Inter", sans-serif;'],
+        inter: ['"Inter", sans-serif;'],
         heading: ['"Gloock", serif;'],
       },
       colors: {
@@ -13,6 +13,12 @@ module.exports = {
         darktext: "#191919",
         gray: "#EDF1F5",
         text: "#7B8EA1",
+        sectionOneBG: "#122BC4",
+        sectionOneText: "#F0EEF3",
+        sectionTwoBG: "#EC0203",
+        sectionTwoText: "#F0EEF3",
+        sectionThreeBG: "#B606F6",
+        sectionThreeText: "#191919",
       },
     },
   },
