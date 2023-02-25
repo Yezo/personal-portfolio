@@ -6,10 +6,11 @@ module.exports = {
     extend: {
       fontFamily: {
         primary: ['"Inter", sans-serif;'],
+        heading: ['"Gloock", serif;'],
       },
       colors: {
-        primary: "#222435",
-        light: "#FAFCFC",
+        primary: "#ECECEC",
+        darktext: "#191919",
         gray: "#EDF1F5",
         text: "#7B8EA1",
       },
