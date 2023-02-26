@@ -39,7 +39,7 @@ export const Arkoko = () => {
               gitHubLink="https://github.com/Yezo/arkoko"
               caseStudyLink="/project/arkoko"
               demoLink="https://arkoko.vercel.app"
-              imageLink={arkoko}
+              imageLink="/arkoko.webp"
             ></ProjectSection>
 
             <ProjectSection
@@ -49,7 +49,7 @@ export const Arkoko = () => {
               gitHubLink="https://github.com/Yezo/aniflux"
               caseStudyLink="/project/arkoko"
               demoLink="https://arkoko.vercel.app"
-              imageLink="src\assets\arkoko.webp"
+              imageLink="/arkoko.webp"
             ></ProjectSection>
 
             <ProjectSection
@@ -59,7 +59,7 @@ export const Arkoko = () => {
               gitHubLink="https://github.com/Yezo/snippit"
               caseStudyLink="/project/snippit"
               demoLink="https://snippits.vercel.app"
-              imageLink="src\assets\arkoko.webp"
+              imageLink="/arkoko.webp"
             ></ProjectSection>
           </section>
         </main>

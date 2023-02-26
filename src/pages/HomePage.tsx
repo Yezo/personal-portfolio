@@ -4,8 +4,12 @@ import { Link } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { ProjectSection } from "../components/ProjectSection";
+import arkoko from "../assets/arkoko.webp";
 
 export const HomePage = () => {
+  //TODO replace imageLinks with imports of images
+  //TODO include favicon in deployment?
+
   return (
     <div
       className="min-h-screen  bg-primary font-normal text-darktext"
@@ -40,7 +44,7 @@ export const HomePage = () => {
               gitHubLink="https://github.com/Yezo/arkoko"
               caseStudyLink="/project/arkoko"
               demoLink="https://arkoko.vercel.app"
-              imageLink="src\assets\arkoko.webp"
+              imageLink="/arkoko.webp"
             ></ProjectSection>
 
             <ProjectSection
@@ -50,7 +54,7 @@ export const HomePage = () => {
               gitHubLink="https://github.com/Yezo/aniflux"
               caseStudyLink="/project/arkoko"
               demoLink="https://arkoko.vercel.app"
-              imageLink="src\assets\arkoko.webp"
+              imageLink="/arkoko.webp"
             ></ProjectSection>
 
             <ProjectSection
@@ -60,7 +64,7 @@ export const HomePage = () => {
               gitHubLink="https://github.com/Yezo/snippit"
               caseStudyLink="/project/snippit"
               demoLink="https://snippits.vercel.app"
-              imageLink="src\assets\arkoko.webp"
+              imageLink="/arkoko.webp"
             ></ProjectSection>
           </section>
         </main>
