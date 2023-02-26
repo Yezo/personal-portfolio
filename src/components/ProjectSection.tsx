@@ -7,6 +7,7 @@ type Props = {
   gitHubLink: string;
   caseStudyLink: string;
   description: string;
+  imageLink: string;
 };
 
 export const ProjectSection = ({
@@ -16,20 +17,21 @@ export const ProjectSection = ({
   gitHubLink,
   caseStudyLink,
   description,
+  imageLink,
 }: Props) => {
   return (
-    <section className="">
+    <section className="flex w-full flex-wrap py-10">
       <img
-        src="https://www.kaystocks.com/assets/hike.jpg"
-        className="h-auto max-w-full object-cover"
-        alt="arkoko"
+        src={imageLink}
+        className="object-fit h-auto flex-1 md:w-2/4"
+        alt={title}
       ></img>
-      <div className="flex flex-col gap-2 p-8  ">
-        <div className="border-b-[1px] border-darktext/40 pb-2">
-          <div className="flex flex-wrap items-center justify-between">
+      <div className="flex flex-col justify-between gap-2 pt-8 md:w-2/4 md:px-8 md:pt-0">
+        <div className="border-b-[1px] border-darktext/40 pb-4">
+          <div className="flex flex-wrap items-center justify-between gap-2">
             <div>
               <Link to="/project/arkoko">
-                <h3 className="font-heading text-4xl leading-[1.25] tracking-tight hover:text-sectionOneBG">
+                <h3 className="font-heading text-4xl leading-[1.25] tracking-tight hover:text-accent">
                   {title}
                 </h3>
               </Link>
