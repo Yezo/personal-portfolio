@@ -1,11 +1,9 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
-/* eslint-disable react/no-unescaped-entities */
-import { Link } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { ProjectSection } from "../components/ProjectSection";
-
-export const HomePage = () => {
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable react/no-unescaped-entities */
+export const Arkoko = () => {
   return (
     <div
       className="min-h-screen  bg-primary font-normal text-darktext"
