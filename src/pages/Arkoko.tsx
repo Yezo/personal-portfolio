@@ -1,6 +1,7 @@
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { ProjectSection } from "../components/ProjectSection";
+import arkoko from "../assets/arkoko.webp";
 /* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable react/no-unescaped-entities */
 export const Arkoko = () => {
@@ -38,7 +39,7 @@ export const Arkoko = () => {
               gitHubLink="https://github.com/Yezo/arkoko"
               caseStudyLink="/project/arkoko"
               demoLink="https://arkoko.vercel.app"
-              imageLink="src\assets\arkoko.webp"
+              imageLink={arkoko}
             ></ProjectSection>
 
             <ProjectSection
