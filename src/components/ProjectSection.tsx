@@ -20,7 +20,7 @@ export const ProjectSection = ({
   imageLink,
 }: Props) => {
   return (
-    <section className="flex w-full flex-wrap py-10">
+    <article className="flex w-full flex-wrap py-10">
       <img
         src={imageLink}
         className="object-fit h-auto flex-1 md:w-2/4"
@@ -42,9 +42,9 @@ export const ProjectSection = ({
             <div className=" space-x-1">
               <Link
                 to={demoLink}
-                className=" transparent select inline-flex select-none items-center gap-2 rounded border-2 border-[#171515] bg-transparent px-3 py-1 font-inter text-sm font-medium text-[#171515] transition-colors hover:bg-[#171515] hover:text-white focus:outline-none focus:ring active:opacity-75"
+                className=" transparent select inline-flex select-none items-center gap-2 rounded-full border-2 border-[#171515] bg-transparent px-3 py-1 font-inter text-sm font-medium text-[#171515] transition-colors hover:bg-[#171515] hover:text-white focus:outline-none focus:ring active:opacity-75"
               >
-                Live Demo
+                Demo
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -58,7 +58,7 @@ export const ProjectSection = ({
               </Link>
               <Link
                 to={gitHubLink}
-                className=" transparent  hidden select-none items-center gap-2 rounded border-2 border-[#171515] bg-transparent px-3 py-1 font-inter text-sm font-medium text-[#171515] transition-colors hover:bg-[#171515] hover:text-white focus:outline-none focus:ring active:opacity-75 sm:inline-flex "
+                className=" transparent  hidden select-none items-center gap-2 rounded-full border-2 border-[#171515] bg-transparent px-3 py-1 font-inter text-sm font-medium text-[#171515] transition-colors hover:bg-[#171515] hover:text-white focus:outline-none focus:ring active:opacity-75 sm:inline-flex "
               >
                 GitHub
                 <svg
@@ -103,6 +103,6 @@ export const ProjectSection = ({
           </Link>
         </div>
       </div>
-    </section>
+    </article>
   );
 };
