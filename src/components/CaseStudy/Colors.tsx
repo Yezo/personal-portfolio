@@ -25,7 +25,7 @@ export const Colors = ({
         <div className="flex flex-wrap gap-1">
           <div className="grid">
             <div
-              className={`col-start-1 row-start-1 h-36 w-24 bg-[${colorOne}] sm:w-36`}
+              className={`col-start-1 row-start-1 h-36 w-24 bg-${colorOne} sm:w-36`}
             ></div>
             <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
               {colorOne}
@@ -33,26 +33,26 @@ export const Colors = ({
           </div>
           <div className="grid">
             <div
-              className={`col-start-1 row-start-1 h-36 w-24 bg-[${colorTwo}] sm:w-36`}
+              className={`col-start-1 row-start-1 h-36 w-24 bg-${colorTwo} sm:w-36`}
             ></div>
             <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
-              {colorTwo}
+              #1C1F26
             </p>
           </div>
-          {colorThree && (
-            <div className="grid">
-              <div
-                className={`col-start-1 row-start-1 h-36 w-24 bg-[${colorThree}] sm:w-36`}
-              ></div>
-              <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-[#15181D]">
-                {colorThree}
-              </p>
-            </div>
-          )}
+
+          <div className="grid">
+            <div
+              className={`col-start-1 row-start-1 h-36 w-24 bg-${colorThree} sm:w-36`}
+            ></div>
+            <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-[#15181D]">
+              #C2C2CC
+            </p>
+          </div>
+
           {colorFour && (
             <div className="grid">
               <div
-                className={`col-start-1 row-start-1 h-36 w-24 bg-[${colorFour}] sm:w-36`}
+                className={`col-start-1 row-start-1 h-36 w-24 bg-${colorFour} sm:w-36`}
               ></div>
               <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-[#15181D]">
                 {colorFour}
