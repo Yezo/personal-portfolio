@@ -17,7 +17,7 @@ export const Arkoko = () => {
         imageTitle="Arkoko"
       />
 
-      <main className="">
+      <main>
         <ProductConception
           paragraph="Arkoko was created with the objective to help alleviate the
                 problem plaguing MMORPG players: too much information to process
