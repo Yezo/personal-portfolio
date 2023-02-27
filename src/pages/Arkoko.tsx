@@ -2,7 +2,6 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { PromotionLink } from "../components/CaseStudy/PromotionLink";
 import { ProductConception } from "../components/CaseStudy/ProductConception";
-import { Colors } from "../components/CaseStudy/Colors";
 import { Challenges } from "../components/CaseStudy/Challenges";
 import { Improvements } from "../components/CaseStudy/Improvements";
 

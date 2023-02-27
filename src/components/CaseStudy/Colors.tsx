@@ -25,7 +25,7 @@ export const Colors = ({
         <div className="flex flex-wrap gap-1">
           <div className="grid">
             <div
-              className={`col-start-1 row-start-1 h-36 w-24 bg-${colorOne} sm:w-36`}
+              className={`col-start-1 row-start-1 h-36 w-24 bg-${colorOne}sm:w-36`}
             ></div>
             <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
               {colorOne}

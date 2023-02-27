@@ -86,7 +86,7 @@ export const ProjectSection = ({
         <div className="buttons flex flex-wrap gap-1">
           <Link
             to={caseStudyLink}
-            className="inline-flex select-none items-center gap-2 rounded bg-accent px-4 py-2 font-inter text-sm font-medium text-white shadow-md ring-1 ring-black/[.70] transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
+            className="inline-flex select-none items-center gap-2 rounded bg-accent px-4 py-2 font-inter text-sm font-medium text-white shadow-md ring-1 ring-black/[.70] transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none"
           >
             View Case Study
             <svg

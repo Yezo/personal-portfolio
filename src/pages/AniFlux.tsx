@@ -2,13 +2,12 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { PromotionLink } from "../components/CaseStudy/PromotionLink";
 import { ProductConception } from "../components/CaseStudy/ProductConception";
-import { Colors } from "../components/CaseStudy/Colors";
 import { Challenges } from "../components/CaseStudy/Challenges";
 import { Improvements } from "../components/CaseStudy/Improvements";
 
 export const AniFlux = () => {
   return (
-    <div className="min-h-screen  bg-primary font-normal text-darktext">
+    <div className="min-h-screen bg-primary font-normal text-darktext">
       <Header
         title="AniFlux"
         subtitle="AniFlux (2023)"
@@ -31,7 +30,45 @@ export const AniFlux = () => {
                 aims to implement as many features as possible."
         />
 
-        <Colors colorOne="#15181D" colorTwo="#1C1F26" colorThree="#C2C2CC" />
+        {/* BUG: color hexcodes cannot be used as props ??? */}
+        <section className="bg-primary px-8 py-4 lg:py-16">
+          <div className="mx-auto max-w-4xl justify-between py-4 lg:flex">
+            <div className="pb-4">
+              <div className="font-primary text-xs font-semibold uppercase text-slate-700 opacity-70">
+                // 02
+              </div>
+              <h3 className="font-primary text-2xl font-semibold leading-[1.25] tracking-tighter">
+                Colors
+              </h3>
+            </div>
+            <div className="flex flex-wrap gap-1">
+              <div className="grid">
+                <div
+                  className={`col-start-1 row-start-1 h-36 w-24 bg-arkokoColorOne sm:w-36`}
+                ></div>
+                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
+                  #15181D
+                </p>
+              </div>
+              <div className="grid">
+                <div
+                  className={`col-start-1 row-start-1 h-36 w-24 bg-arkokoColorTwo sm:w-36`}
+                ></div>
+                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
+                  #1C1F26
+                </p>
+              </div>
+              <div className="grid">
+                <div
+                  className={`col-start-1 row-start-1 h-36 w-24 bg-arkokoColorThree sm:w-36`}
+                ></div>
+                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-[#15181D]">
+                  #C2C2CC
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <Challenges
           firstHeading="Oreha Crafting Calculator"
