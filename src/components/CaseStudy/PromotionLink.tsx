@@ -12,7 +12,7 @@ export const PromotionLink = ({ URL }: Props) => {
           Check it out.
         </h5>
         <Link to={URL} target="_blank">
-          <div className="max-w-fit rounded-full bg-darktext px-14 py-3 font-heading font-semibold tracking-widest text-primary transition-colors hover:bg-accent hover:text-white">
+          <div className="max-w-fit rounded-full bg-darktext px-14 py-3 font-heading font-semibold tracking-widest text-primary shadow-lg transition-colors hover:bg-accent hover:text-white">
             {URL}
           </div>
         </Link>

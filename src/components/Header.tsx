@@ -37,7 +37,7 @@ export const Header = ({
           </h2>
         </div>
         {imageURL && (
-          <div className="grid w-full place-items-center">
+          <div className="grid w-full place-items-center shadow-sm">
             <img src={imageURL} alt={imageTitle} className="max-h-[25rem]" />
           </div>
         )}

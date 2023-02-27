@@ -23,7 +23,7 @@ export const ProjectSection = ({
     <article className="flex w-full flex-wrap py-10">
       <img
         src={imageLink}
-        className="object-fit h-auto flex-1 md:w-2/4"
+        className="object-fit h-auto flex-1 shadow-sm md:w-2/4"
         alt={title}
       ></img>
       <div className="flex flex-col justify-between gap-2 pt-8 md:w-2/4 md:px-8 md:pt-0">
@@ -31,7 +31,7 @@ export const ProjectSection = ({
           <div className="flex flex-wrap items-center justify-between gap-2">
             <div>
               <Link to="/project/arkoko">
-                <h3 className="font-heading text-4xl leading-[1.25] tracking-tight hover:text-accent">
+                <h3 className="font-heading text-4xl leading-[1.25] tracking-tight hover:text-accent ">
                   {title}
                 </h3>
               </Link>
@@ -39,10 +39,10 @@ export const ProjectSection = ({
                 {technologies.join(", ")}
               </p>
             </div>
-            <div className=" space-x-1">
+            <div className="flex gap-2">
               <Link
                 to={demoLink}
-                className="transparent  hidden select-none items-center gap-2 rounded-full bg-transparent px-3 py-1 font-inter text-sm font-medium text-[#171515] ring-1 ring-black/[.70] transition-colors hover:bg-[#171515] hover:text-white focus:outline-none focus:ring active:opacity-75 sm:inline-flex"
+                className="transparent  hidden select-none items-center gap-2 rounded-full bg-transparent px-3 py-1 font-inter text-sm font-medium text-[#171515] shadow-md ring-1 ring-black/[.70] transition-colors hover:bg-[#171515] hover:text-white focus:outline-none focus:ring active:opacity-75 sm:inline-flex"
                 target="_blank"
               >
                 Demo
@@ -59,7 +59,7 @@ export const ProjectSection = ({
               </Link>
               <Link
                 to={gitHubLink}
-                className=" transparent  hidden select-none items-center gap-2 rounded-full bg-transparent px-3 py-1 font-inter text-sm font-medium text-[#171515] ring-1 ring-black/[.70] transition-colors hover:bg-[#171515] hover:text-white focus:outline-none focus:ring active:opacity-75 sm:inline-flex"
+                className=" transparent  hidden select-none items-center gap-2 rounded-full bg-transparent px-3 py-1 font-inter text-sm font-medium text-[#171515] shadow-md ring-1 ring-black/[.70] transition-colors hover:bg-[#171515] hover:text-white focus:outline-none focus:ring active:opacity-75 sm:inline-flex"
                 target="_blank"
               >
                 GitHub
@@ -86,7 +86,7 @@ export const ProjectSection = ({
         <div className="buttons flex flex-wrap gap-1">
           <Link
             to={caseStudyLink}
-            className="inline-flex select-none items-center gap-2 rounded bg-accent px-4 py-2 font-inter text-sm font-medium text-white ring-1 ring-black/[.70] transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
+            className="inline-flex select-none items-center gap-2 rounded bg-accent px-4 py-2 font-inter text-sm font-medium text-white shadow-md ring-1 ring-black/[.70] transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
           >
             View Case Study
             <svg
