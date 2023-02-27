@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 /* eslint-disable react/jsx-no-comment-textnodes */
 export const Footer = () => {
   return (
-    <footer className="min-w-screen bg-accent tracking-tighter text-primary">
+    <footer className="min-w-screen bg-accent px-8 tracking-tighter text-primary">
       <div className="mx-auto flex max-w-4xl flex-col items-center justify-between gap-4 py-10 px-8 md:flex-row">
         <a href="#home">
           <h2 className="font-heading text-4xl transition-all hover:italic">

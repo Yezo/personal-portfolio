@@ -1,24 +1,18 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
-/* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { ProjectSection } from "../components/ProjectSection";
-import arkoko from "../assets/arkoko.webp";
 
 export const HomePage = () => {
-  //TODO replace imageLinks with imports of images
-  //TODO include favicon in deployment?
-
   return (
     <div
       className="min-h-screen  bg-primary font-normal text-darktext"
       id="home"
     >
-      <div className="mx-auto max-w-4xl px-8">
+      <div className="mx-auto max-w-4xl px-8 pb-20">
         <Header />
         <main>
-          <section className="mb-20">
+          <section className="pb-56">
             <h2 className="font-primary mb-2 font-semibold uppercase tracking-widest text-slate-700 opacity-30">
               // Hello, I'm Kev
             </h2>
@@ -62,7 +56,7 @@ export const HomePage = () => {
               technologies={["React", "TypeScript", "TailwindCSS"]}
               description="Programmers often forget basic code syntax while coding. They can now find code snippets among other tips and tricks located here all in one place. Snippits was programmed for users who have the memory of a goldfish made by a programmer with the memory of a goldfish. "
               gitHubLink="https://github.com/Yezo/snippit"
-              caseStudyLink="/project/snippit"
+              caseStudyLink="/project/arkoko"
               demoLink="https://snippits.vercel.app"
               imageLink="/arkoko.webp"
             ></ProjectSection>

@@ -43,6 +43,7 @@ export const ProjectSection = ({
               <Link
                 to={demoLink}
                 className=" transparent select inline-flex select-none items-center gap-2 rounded-full border-2 border-[#171515] bg-transparent px-3 py-1 font-inter text-sm font-medium text-[#171515] transition-colors hover:bg-[#171515] hover:text-white focus:outline-none focus:ring active:opacity-75"
+                target="_blank"
               >
                 Demo
                 <svg
@@ -58,7 +59,8 @@ export const ProjectSection = ({
               </Link>
               <Link
                 to={gitHubLink}
-                className=" transparent  hidden select-none items-center gap-2 rounded-full border-2 border-[#171515] bg-transparent px-3 py-1 font-inter text-sm font-medium text-[#171515] transition-colors hover:bg-[#171515] hover:text-white focus:outline-none focus:ring active:opacity-75 sm:inline-flex "
+                className=" transparent  hidden select-none items-center gap-2 rounded-full border-2 border-[#171515] bg-transparent px-3 py-1 font-inter text-sm font-medium text-[#171515] transition-colors hover:bg-[#171515] hover:text-white focus:outline-none focus:ring active:opacity-75 sm:inline-flex"
+                target="_blank"
               >
                 GitHub
                 <svg
