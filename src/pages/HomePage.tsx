@@ -9,18 +9,13 @@ export const HomePage = () => {
       className="min-h-screen  bg-primary font-normal text-darktext"
       id="home"
     >
-      <div className="mx-auto max-w-4xl px-8 pb-20">
-        <Header />
+      <div className="mx-auto max-w-4xl pb-20">
+        <Header
+          title="I'm a full-stack web developer with a creative mind who can help solve your problems."
+          subtitle="Hello, I'm Kev"
+          textOrientation="left"
+        />
         <main>
-          <section className="pb-56">
-            <h2 className="font-primary mb-2 font-semibold uppercase tracking-widest text-slate-700 opacity-30">
-              // Hello, I'm Kev
-            </h2>
-            <h2 className="max-w-[15ch] font-heading  text-5xl leading-[1.25] tracking-tight text-darktext md:text-7xl">
-              I'm a full-stack web developer with a creative mind who can help
-              solve your problems.
-            </h2>
-          </section>
           <section className="divide-y divide-stone-300" id="projects">
             <ProjectSection
               title="Arkoko"
