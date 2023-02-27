@@ -42,7 +42,7 @@ export const ProjectSection = ({
             <div className=" space-x-1">
               <Link
                 to={demoLink}
-                className=" transparent select inline-flex select-none items-center gap-2 rounded-full border-2 border-[#171515] bg-transparent px-3 py-1 font-inter text-sm font-medium text-[#171515] transition-colors hover:bg-[#171515] hover:text-white focus:outline-none focus:ring active:opacity-75"
+                className="transparent  hidden select-none items-center gap-2 rounded-full bg-transparent px-3 py-1 font-inter text-sm font-medium text-[#171515] ring-1 ring-black/[.70] transition-colors hover:bg-[#171515] hover:text-white focus:outline-none focus:ring active:opacity-75 sm:inline-flex"
                 target="_blank"
               >
                 Demo
@@ -59,7 +59,7 @@ export const ProjectSection = ({
               </Link>
               <Link
                 to={gitHubLink}
-                className=" transparent  hidden select-none items-center gap-2 rounded-full border-2 border-[#171515] bg-transparent px-3 py-1 font-inter text-sm font-medium text-[#171515] transition-colors hover:bg-[#171515] hover:text-white focus:outline-none focus:ring active:opacity-75 sm:inline-flex"
+                className=" transparent  hidden select-none items-center gap-2 rounded-full bg-transparent px-3 py-1 font-inter text-sm font-medium text-[#171515] ring-1 ring-black/[.70] transition-colors hover:bg-[#171515] hover:text-white focus:outline-none focus:ring active:opacity-75 sm:inline-flex"
                 target="_blank"
               >
                 GitHub
@@ -86,7 +86,7 @@ export const ProjectSection = ({
         <div className="buttons flex flex-wrap gap-1">
           <Link
             to={caseStudyLink}
-            className="inline-flex select-none items-center gap-2 rounded border-2 border-[#171515] bg-[#171515] px-4 py-2 font-inter text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
+            className="inline-flex select-none items-center gap-2 rounded bg-accent px-4 py-2 font-inter text-sm font-medium text-white ring-1 ring-black/[.70] transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none focus:ring active:opacity-75"
           >
             View Case Study
             <svg
@@ -94,7 +94,7 @@ export const ProjectSection = ({
               width="16"
               height="16"
               fill="currentColor"
-              className="bi bi-arrow-right"
+              className="bi bi-arrow-right "
               viewBox="0 0 16 16"
             >
               <path
