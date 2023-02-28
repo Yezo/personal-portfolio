@@ -22,7 +22,7 @@ export const Header = ({
           </h1>
         </Link>
         <nav className="flex gap-4 ">
-          <Link to="/" target="_blank" className="hover:text-accent">
+          <Link to="/" target="_blank" className="hover:text-accent ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
@@ -87,8 +87,12 @@ export const Header = ({
           </h2>
         </div>
         {imageURL && (
-          <div className="grid w-full place-items-center shadow-sm">
-            <img src={imageURL} alt={imageTitle} className="max-h-[25rem]" />
+          <div className="grid w-full place-items-center ">
+            <img
+              src={imageURL}
+              alt={imageTitle}
+              className="max-h-[25rem] rounded shadow-md ring-1 ring-darktext/20"
+            />
           </div>
         )}
       </section>

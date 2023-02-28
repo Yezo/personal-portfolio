@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/jsx-no-comment-textnodes */
 export const Footer = () => {
   return (
     <footer className="min-w-screen bg-accent px-8 tracking-tighter text-primary">

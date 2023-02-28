@@ -23,7 +23,7 @@ export const ProjectSection = ({
     <article className="flex w-full flex-wrap py-10">
       <img
         src={imageLink}
-        className="object-fit h-auto flex-1 shadow-sm md:w-2/4"
+        className="object-fit h-auto flex-1 rounded shadow-md ring-1 ring-darktext/10 md:w-2/4"
         alt={title}
       ></img>
       <div className="flex flex-col justify-between gap-2 pt-8 md:w-2/4 md:px-8 md:pt-0">
