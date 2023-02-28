@@ -9,26 +9,15 @@ export const AniFlux = () => {
   return (
     <div className="min-h-screen bg-primary font-normal text-darktext">
       <Header
-        title="AniFlux"
+        title="A sleek and modern design for the new age of anime"
         subtitle="AniFlux (2023)"
         textOrientation="center"
-        imageURL="/AniFlux.webp"
+        imageURL="/aniflux.webp"
         imageTitle="AniFlux"
       />
 
       <main>
-        <ProductConception
-          paragraph="AniFlux was created with the objective to help alleviate the
-                problem plaguing MMORPG players: too much information to process
-                while playing the game. Users want to be as efficient in the
-                least amount of time as possible but many players end up
-                spending more time on calculating what's efficient to do instead
-                of actually playing the game."
-          paragraph2="Many games have a lot of online resources to help new and
-                existing players learn more about the game but many websites
-                lack certain features that others have and vice-versa. AniFlux
-                aims to implement as many features as possible."
-        />
+        <ProductConception paragraph="The problem I wanted AniFlux to help solve was that there were a lot of anime-related websites that had outdated designs and bloated with unnecessary content. It became difficult to navigate and digest concise information about specific animes. The goal of this web application is to be able to convey everything about an anime in the least amount of time as possible while visually pleasing the eyes of its users." />
 
         {/* BUG: color hexcodes cannot be used as props ??? */}
         <section className="bg-primary px-8 py-4 lg:py-16">
@@ -44,26 +33,34 @@ export const AniFlux = () => {
             <div className="flex flex-wrap gap-1">
               <div className="grid">
                 <div
-                  className={`col-start-1 row-start-1 h-36 w-24 bg-arkokoColorOne sm:w-36`}
+                  className={`col-start-1 row-start-1 h-36 w-24 bg-[#EDF1F5] sm:w-36`}
                 ></div>
-                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
-                  #15181D
+                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-black">
+                  #EDF1F5
                 </p>
               </div>
               <div className="grid">
                 <div
-                  className={`col-start-1 row-start-1 h-36 w-24 bg-arkokoColorTwo sm:w-36`}
+                  className={`col-start-1 row-start-1 h-36 w-24 bg-[#7B8EA1] sm:w-36`}
                 ></div>
-                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
-                  #1C1F26
+                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-black">
+                  #7B8EA1
                 </p>
               </div>
               <div className="grid">
                 <div
-                  className={`col-start-1 row-start-1 h-36 w-24 bg-arkokoColorThree sm:w-36`}
+                  className={`col-start-1 row-start-1 h-36 w-24 bg-[#2d2d29] sm:w-36`}
                 ></div>
-                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-[#15181D]">
-                  #C2C2CC
+                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
+                  #2D2D29
+                </p>
+              </div>
+              <div className="grid">
+                <div
+                  className={`col-start-1 row-start-1 h-36 w-24 bg-[#3480EA] sm:w-36`}
+                ></div>
+                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
+                  #3480EA
                 </p>
               </div>
             </div>
@@ -71,45 +68,15 @@ export const AniFlux = () => {
         </section>
 
         <Challenges
-          firstHeading="Oreha Crafting Calculator"
-          firstParagraph="From a technical standpoint, the biggest challenge was
-                    definitely the Oreha Crafting Calculator. The data
-                    structures involved were complicated since they used nested
-                    objects for the recipes. It was also difficult managing data
-                    coming from the local API as well as from the
-                    LostArkMarketOnline API."
-          firstParagraphTwo="The code implementation for this specific tool leaves much
-                    to be desired. I believe if I were to re-do the code for
-                    this, it would be refactored into much cleaner code. My
-                    biggest takeaway from programming this would have to be the
-                    merging and manipulation of nested array of objects."
-          secondHeading="AniFlux as a whole"
-          secondParagraph="This is the biggest project I've done and it is definitely
-                    an ambitious one as a junior web developer. It has a lot of
-                    working individual parts and has more content than most
-                    websites."
-          secondParagraphTwo="Determining how I should tackle each challenge proves
-                    difficult since every feature of AniFlux is so unique that
-                    searching for answers to specific problems I face while
-                    coding seems almost an impossible task. However, it is
-                    without a doubt twice as rewarding when I figure out the
-                    problems myself and I think that is what keeps me working on
-                    AniFlux as my main passion project."
+          firstHeading="Pagination"
+          firstParagraph="Originally, there were pagination features for some pages on the website. However, I quickly realized hand-coding pagination from scratch was a nightmare. The pagination did work but I ultimately scrapped the idea and ended up displaying all the data at once on a single page. Perhaps less clicks is a better user experience. "
         />
 
         <Improvements
-          firstHeading="Responsive Design for Tables"
-          firstParagraph="AniFlux has many features and a majority of its content comes
-                    in the form of tabular data. The data tables found on the
-                    Marketplace page requires a revamp in terms of
-                    responsiveness. The challenge is figuring out which
-                    categories should be omitted on mobile, if needed at all."
-          secondHeading="Design System"
-          secondParagraph="As mentioned before, this is a large project with a lot of
-                    components and pages. One regret I have is not having a
-                    design system in place before starting. Everything would be
-                    more consistent had I determined which colors, fonts, and
-                    designs of components I'd be using from the very start."
+          firstHeading="Jikan API"
+          firstParagraph="Unfortunately, the JikanAPI has some shortcomings despite providing a ton of data about anime. It is missing some data points for obscure anime. The API is also free and has rate-limiting in place to prevent too many requests. Users that visit AniFlux may experience missing data due to being rate-limited."
+          secondHeading="Jikan API Continued"
+          secondParagraph="Despite the shortcomings, JikanAPI offers a large variety of endpoints for developers to play with. A lot of improvements can be made such as adding features for manga, recommendations, reviews, and many others."
         />
 
         <PromotionLink URL="https://aniflux.onrender.com" />
