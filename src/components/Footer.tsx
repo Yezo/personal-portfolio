@@ -9,14 +9,26 @@ export const Footer = () => {
           </h2>
         </a>
 
-        <div>
-          <p className="font-inter text-sm font-semibold tracking-tight selection:bg-white selection:text-[#415c4f]">
-            kvo.codes@gmail.com
-          </p>
-        </div>
         <ul className="flex items-center justify-center gap-4 font-inter text-sm font-semibold tracking-tight">
           <Link
-            to="/"
+            to="mailto:kvo.codes@gmail.com"
+            className=" flex items-center justify-center gap-1 hover:underline"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="currentColor"
+              className="bi bi-envelope-fill"
+              viewBox="0 0 16 16"
+            >
+              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+            </svg>
+            <h4>kvo.codes@gmail.com</h4>
+          </Link>
+          <span className="opacity-40">//</span>
+          <Link
+            to="https://www.linkedin.com/in/kevin-vo-9219bb251/"
             className=" flex items-center justify-center gap-1 hover:underline"
           >
             <svg
@@ -33,7 +45,7 @@ export const Footer = () => {
           </Link>
           <span className="opacity-40">//</span>
           <Link
-            to="/"
+            to="https://github.com/Yezo"
             className="flex items-center justify-center gap-1 hover:underline"
           >
             <svg
@@ -50,7 +62,7 @@ export const Footer = () => {
           </Link>
           <span className="opacity-40">//</span>
           <Link
-            to="/"
+            to="/resume.docx.pdf"
             className="flex items-center justify-center gap-1 hover:underline"
           >
             <svg

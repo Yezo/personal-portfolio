@@ -7,7 +7,7 @@ export const HomePage = () => {
     <div className="min-h-screen  bg-primary font-normal text-darktext">
       <div className="mx-auto max-w-4xl pb-20">
         <Header
-          title="I'm a full-stack web developer equipped with efficient solutions to your diverse problems."
+          title="I'm a full-stack software engineer equipped with efficient solutions to your diverse problems."
           subtitle="Hey, call me Kev"
           textOrientation="left"
         />
@@ -24,7 +24,7 @@ export const HomePage = () => {
                 "TailwindCSS",
               ]}
               description="Arkoko is a MERN application that allows Lost Ark users to view in-game information in a centralized
-          locatio. It aims to provide players the necessary data for them to
+          location. It aims to provide players the necessary data for them to
           develop informed decisions all at a single glance. Spend more time playing the game while Arkoko does the heavy-lifting for you."
               gitHubLink="https://github.com/Yezo/arkoko"
               caseStudyLink="/project/arkoko"
@@ -36,7 +36,7 @@ export const HomePage = () => {
               title="AniFlux"
               technologies={["React", "TypeScript", "TailwindCSS", "PrismJS"]}
               description="An application built with React that showcases all kinds of anime ranging from currently airing, the most popular anime of all time, and even provides a random anime for you should you not be able to choose one yourself. Users can even search for any anime that they want to know more about."
-              gitHubLink="https://github.com/Yezo/aniflux"
+              gitHubLink="https://github.com/Yezo/jikan-anime-project"
               caseStudyLink="/project/aniflux"
               demoLink="https://aniflux.onrender.com"
               imageLink="/aniflux.webp"
