@@ -10,8 +10,8 @@ export const Footer = () => {
         </a>
 
         <div>
-          <p className="font-inter text-sm font-semibold tracking-tight">
-            dummy@gmail.com
+          <p className="font-inter text-sm font-semibold tracking-tight selection:bg-white selection:text-[#415c4f]">
+            kvo.codes@gmail.com
           </p>
         </div>
         <ul className="flex items-center justify-center gap-4 font-inter text-sm font-semibold tracking-tight">

@@ -92,6 +92,7 @@ export const Header = ({
               src={imageURL}
               alt={imageTitle}
               className="max-h-[25rem] rounded shadow-md ring-1 ring-darktext/20"
+              loading="lazy"
             />
           </div>
         )}
