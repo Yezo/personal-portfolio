@@ -1,5 +1,5 @@
 import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+import { Header } from "../components/Header/Header";
 import { PromotionLink } from "../components/CaseStudy/PromotionLink";
 import { ProductConception } from "../components/CaseStudy/ProductConception";
 import { Challenges } from "../components/CaseStudy/Challenges";

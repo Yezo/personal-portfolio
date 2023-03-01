@@ -9,7 +9,7 @@ export const Footer = () => {
           </h2>
         </a>
 
-        <ul className="flex items-center justify-center gap-4 font-inter text-sm font-semibold tracking-tight">
+        <ul className="flex flex-wrap items-center justify-center gap-4 font-inter text-sm font-semibold tracking-tight">
           <Link
             to="mailto:kvo.codes@gmail.com"
             className=" flex items-center justify-center gap-1 hover:underline"
