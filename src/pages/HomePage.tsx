@@ -1,13 +1,13 @@
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header/Header";
-import { ProjectSection } from "../components/ProjectSection";
+import { Footer } from "../components/Footer"
+import { Header } from "../components/Header/Header"
+import { ProjectSection } from "../components/ProjectSection"
 
 export const HomePage = () => {
   return (
     <div className="min-h-screen  bg-primary font-normal text-darktext">
       <div className="mx-auto max-w-4xl pb-20">
         <Header
-          title="I'm a full-stack software engineer equipped with efficient solutions to your diverse problems."
+          title="I'm a full-stack software developer equipped with efficient solutions to your diverse problems."
           subtitle="Hey, call me Kev"
           textOrientation="left"
         />
@@ -15,14 +15,7 @@ export const HomePage = () => {
           <section className="divide-y divide-stone-300 px-8" id="projects">
             <ProjectSection
               title="Arkoko"
-              technologies={[
-                "React",
-                "NodeJS",
-                "Express",
-                "MongoDB",
-                "TypeScript",
-                "TailwindCSS",
-              ]}
+              technologies={["React", "NodeJS", "Express", "MongoDB", "TypeScript", "TailwindCSS"]}
               description="Arkoko is a MERN application that allows Lost Ark users to view in-game information in a centralized
           location. It aims to provide players the necessary data for them to
           develop informed decisions all at a single glance. Spend more time playing the game while Arkoko does the heavy-lifting for you."
@@ -56,5 +49,5 @@ export const HomePage = () => {
       </div>
       <Footer />
     </div>
-  );
-};
+  )
+}
