@@ -1,12 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 export const Footer = () => {
   return (
     <footer className="min-w-screen bg-accent px-8 tracking-tighter text-primary">
       <div className="mx-auto flex max-w-4xl flex-col items-center justify-between gap-4 py-10 px-8 md:flex-row">
         <a href="/">
-          <h2 className="font-heading text-4xl transition-all hover:italic">
-            kv.
-          </h2>
+          <h2 className="font-heading text-4xl transition-all hover:italic">kv.</h2>
         </a>
 
         <ul className="flex flex-wrap items-center justify-center gap-4 font-inter text-sm font-semibold tracking-tight">
@@ -28,7 +26,7 @@ export const Footer = () => {
           </Link>
           <span className="opacity-40">//</span>
           <Link
-            to="https://www.linkedin.com/in/kevin-vo-9219bb251/"
+            to="https://www.linkedin.com/in/kvocodes/"
             className=" flex items-center justify-center gap-1 hover:underline"
           >
             <svg
@@ -85,5 +83,5 @@ export const Footer = () => {
         </ul>
       </div>
     </footer>
-  );
-};
+  )
+}

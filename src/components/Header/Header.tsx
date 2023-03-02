@@ -1,20 +1,15 @@
-import * as Tooltip from "@radix-ui/react-tooltip";
-import { Link } from "react-router-dom";
-import { NavIcon } from "./NavIcon";
-interface Props {
-  title: string;
-  subtitle: string;
-  textOrientation: string;
-  imageURL?: string;
-  imageTitle?: string;
+import { Link } from "react-router-dom"
+import { NavIcon } from "./NavIcon"
+
+type Props = {
+  title: string
+  subtitle: string
+  textOrientation: string
+  imageURL?: string
+  imageTitle?: string
 }
-export const Header = ({
-  title,
-  subtitle,
-  textOrientation,
-  imageURL,
-  imageTitle,
-}: Props) => {
+
+export const Header = ({ title, subtitle, textOrientation, imageURL, imageTitle }: Props) => {
   return (
     <header className="max-h-[90vh] ">
       <div className=" mx-auto mb-20 flex max-w-4xl items-center justify-between px-8 pt-8 ">
@@ -24,10 +19,7 @@ export const Header = ({
           </h1>
         </Link>
         <nav className="flex gap-4 ">
-          <NavIcon
-            tooltipText={"Contact Me"}
-            url={"mailto:kvo.codes@gmail.com"}
-          >
+          <NavIcon tooltipText={"Contact Me"} url={"mailto:kvo.codes@gmail.com"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -40,10 +32,7 @@ export const Header = ({
             </svg>
           </NavIcon>
 
-          <NavIcon
-            tooltipText={"Visit LinkedIn"}
-            url={"https://www.linkedin.com/in/kevin-vo-9219bb251/"}
-          >
+          <NavIcon tooltipText={"Visit LinkedIn"} url={"https://www.linkedin.com/in/kvocodes/"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
@@ -113,5 +102,5 @@ export const Header = ({
         )}
       </section>
     </header>
-  );
-};
+  )
+}
