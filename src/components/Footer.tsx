@@ -59,10 +59,7 @@ export const Footer = () => {
             <h4>GitHub</h4>
           </Link>
           <span className="opacity-40">//</span>
-          <Link
-            to="/resume.docx.pdf"
-            className="flex items-center justify-center gap-1 hover:underline"
-          >
+          <Link to="/resume.pdf" className="flex items-center justify-center gap-1 hover:underline">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"

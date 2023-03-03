@@ -58,7 +58,7 @@ export const Header = ({ title, subtitle, textOrientation, imageURL, imageTitle 
             </svg>
           </NavIcon>
 
-          <NavIcon tooltipText={"View Resume"} url={"/resume.docx.pdf"}>
+          <NavIcon tooltipText={"View Resume"} url={"/resume.pdf"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
