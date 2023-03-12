@@ -1,9 +1,9 @@
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header/Header";
-import { PromotionLink } from "../components/CaseStudy/PromotionLink";
-import { ProductConception } from "../components/CaseStudy/ProductConception";
-import { Challenges } from "../components/CaseStudy/Challenges";
-import { Improvements } from "../components/CaseStudy/Improvements";
+import { Footer } from "../components/Footer"
+import { Header } from "../components/Header/Header"
+import { PromotionLink } from "../components/CaseStudy/PromotionLink"
+import { ProductConception } from "../components/CaseStudy/ProductConception"
+import { Challenges } from "../components/CaseStudy/Challenges"
+import { Improvements } from "../components/CaseStudy/Improvements"
 
 export const Arkoko = () => {
   return (
@@ -23,7 +23,7 @@ export const Arkoko = () => {
                 while playing the game. Users want to be as efficient in the
                 least amount of time as possible but many players end up
                 spending more time on calculating what's efficient to do instead
-                of actually playing the game."
+                of actually playing the game. All games are built upon numbers and statistics and is the driving force behind Arkoko."
           paragraph2="Many games have a lot of online resources to help new and
                 existing players learn more about the game but many websites
                 lack certain features that others have and vice-versa. Arkoko
@@ -100,16 +100,14 @@ export const Arkoko = () => {
         <Improvements
           firstHeading="Responsive Design for Tables"
           firstParagraph="Arkoko has many features and a majority of its content comes
-                    in the form of tabular data. The data tables found on the
-                    Marketplace page requires a revamp in terms of
-                    responsiveness. The challenge is figuring out which
-                    categories should be omitted on mobile, if needed at all."
+                    in the form of tabular data. Designing tabular data for mobile-first responsive design is a challenging task. The main challenge is figuring out which
+                    categories should be omitted on mobile, if needed at all. On the other hand, one alternative is to implement a completely brand new design to an existing component to show to users when on mobile as seen with the Mari's Shop page.  "
           secondHeading="Design System"
           secondParagraph="As mentioned before, this is a large project with a lot of
                     components and pages. One regret I have is not having a
                     design system in place before starting. Everything would be
                     more consistent had I determined which colors, fonts, and
-                    designs of components I'd be using from the very start."
+                    designs of components I'd be using from the very start. "
         />
 
         <PromotionLink URL="https://arkoko.vercel.app" />
@@ -117,5 +115,5 @@ export const Arkoko = () => {
 
       <Footer />
     </div>
-  );
-};
+  )
+}

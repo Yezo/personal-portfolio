@@ -16,9 +16,7 @@ export const HomePage = () => {
             <ProjectSection
               title="Arkoko"
               technologies={["React", "NodeJS", "Express", "MongoDB", "TypeScript", "TailwindCSS"]}
-              description="Arkoko is a MERN application that allows Lost Ark users to view in-game information in a centralized
-          location. It aims to provide players the necessary data for them to
-          develop informed decisions all at a single glance. Spend more time playing the game while Arkoko does the heavy-lifting for you."
+              description="Arkoko is a MERN stack web application that serves as a data-driven game analytics platform for Lost Ark. It aims to provide players the necessary data for users to develop informed in-game decisions all at a single glance. Spend more time playing the game while Arkoko does the heavy-lifting."
               gitHubLink="https://github.com/Yezo/arkoko"
               caseStudyLink="/project/arkoko"
               demoLink="https://arkoko.vercel.app"
@@ -28,7 +26,7 @@ export const HomePage = () => {
             <ProjectSection
               title="AniFlux"
               technologies={["React", "TypeScript", "TailwindCSS", "PrismJS"]}
-              description="An application built with React that showcases all kinds of anime ranging from currently airing, the most popular anime of all time, and even provides a random anime for you should you not be able to choose one yourself. Users can even search for any anime that they want to know more about."
+              description="An application built with React that showcases all kinds of anime ranging from currently airing, the most popular anime of all time, or even a random anime provided a user can't choose one themselves. Users are also able to search for any anime themselves with search bar functionality."
               gitHubLink="https://github.com/Yezo/jikan-anime-project"
               caseStudyLink="/project/aniflux"
               demoLink="https://aniflux.onrender.com"
