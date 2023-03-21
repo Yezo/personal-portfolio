@@ -1,14 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
 
 type Props = {
-  title: string;
-  technologies: string[];
-  demoLink: string;
-  gitHubLink: string;
-  caseStudyLink: string;
-  description: string;
-  imageLink: string;
-};
+  title: string
+  technologies: string[]
+  demoLink: string
+  gitHubLink: string
+  caseStudyLink: string
+  description: string
+  imageLink: string
+}
 
 export const ProjectSection = ({
   title,
@@ -20,7 +21,13 @@ export const ProjectSection = ({
   imageLink,
 }: Props) => {
   return (
-    <article className="flex w-full flex-wrap py-10">
+    <motion.article
+      className="flex w-full flex-wrap py-20"
+      initial={{ opacity: 0, x: -75 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ ease: "easeInOut", duration: 0.85, delay: 0.2 }}
+      viewport={{ once: true }}
+    >
       <img
         src={imageLink}
         className="object-fit h-auto flex-1 rounded shadow-md ring-1 ring-darktext/10 md:w-2/4"
@@ -31,9 +38,9 @@ export const ProjectSection = ({
           <div className="flex flex-wrap items-center justify-between gap-2">
             <div>
               <Link to="/project/arkoko">
-                <h3 className="font-heading text-4xl leading-[1.25] tracking-tight hover:text-accent ">
+                <motion.h3 className="font-heading text-4xl leading-[1.25] tracking-tight hover:text-accent ">
                   {title}
-                </h3>
+                </motion.h3>
               </Link>
               <p className="hidden font-inter text-sm italic opacity-80 sm:flex sm:gap-1 ">
                 {technologies.join(", ")}
@@ -80,9 +87,7 @@ export const ProjectSection = ({
           </div>
         </div>
 
-        <p className="mb-2 font-inter text-sm leading-[1.75] opacity-80 ">
-          {description}
-        </p>
+        <p className="mb-2 font-inter text-sm leading-[1.75] opacity-80 ">{description}</p>
         <div className="buttons flex flex-wrap gap-1">
           <Link
             to={caseStudyLink}
@@ -105,6 +110,6 @@ export const ProjectSection = ({
           </Link>
         </div>
       </div>
-    </article>
-  );
-};
+    </motion.article>
+  )
+}

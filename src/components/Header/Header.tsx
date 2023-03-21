@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { NavIcon } from "./NavIcon"
+import { motion } from "framer-motion"
 
 type Props = {
   title: string
@@ -14,11 +15,23 @@ export const Header = ({ title, subtitle, textOrientation, imageURL, imageTitle 
     <header className="max-h-[90vh]">
       <div className=" mx-auto mb-20 flex max-w-4xl items-center justify-between px-8 pt-8">
         <Link to="/">
-          <h1 className="font-heading text-4xl tracking-tighter transition-colors hover:text-accent">
+          <motion.h1
+            className="font-heading text-4xl tracking-tighter transition-colors hover:text-accent"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: "easeInOut", duration: 0.85 }}
+            viewport={{ once: true }}
+          >
             kv.
-          </h1>
+          </motion.h1>
         </Link>
-        <nav className="flex gap-4 ">
+        <motion.nav
+          className="flex gap-4 "
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ ease: "easeInOut", duration: 0.85 }}
+          viewport={{ once: true }}
+        >
           <NavIcon tooltipText={"Contact Me"} url={"mailto:kvo.codes@gmail.com"}>
             <ContactMailSVG />
           </NavIcon>
@@ -34,30 +47,46 @@ export const Header = ({ title, subtitle, textOrientation, imageURL, imageTitle 
           <NavIcon tooltipText={"View Resume"} url={"/resume.pdf"}>
             <ResumeSVG />
           </NavIcon>
-        </nav>
+        </motion.nav>
       </div>
       <section className="mx-auto mb-20 max-h-screen max-w-4xl space-y-4 px-8 md:space-y-8">
         <div>
-          <h2 className="font-primary mb-2 font-semibold uppercase tracking-widest text-slate-700 opacity-30">
+          <motion.h2
+            className="font-primary mb-2 font-semibold uppercase tracking-widest text-slate-700 opacity-30"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: "easeInOut", duration: 0.85 }}
+            viewport={{ once: true }}
+          >
             // {subtitle}
-          </h2>
-          <h2
+          </motion.h2>
+          <motion.h2
             className={`max-w-full font-heading text-5xl text-darktext md:text-7xl ${
               textOrientation === "left" ? "text-left" : "text-center"
             }`}
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: "easeInOut", duration: 0.85 }}
+            viewport={{ once: true }}
           >
             {title}
-          </h2>
+          </motion.h2>
         </div>
         {imageURL && (
-          <div className="grid w-full place-items-center">
+          <motion.div
+            className="grid w-full place-items-center"
+            initial={{ opacity: 0, x: -75 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: "easeInOut", duration: 0.85, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             <img
               src={imageURL}
               alt={imageTitle}
               className="max-h-[25rem] rounded shadow-md ring-1 ring-darktext/20"
               loading="lazy"
             />
-          </div>
+          </motion.div>
         )}
       </section>
     </header>

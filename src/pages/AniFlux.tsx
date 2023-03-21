@@ -1,9 +1,10 @@
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header/Header";
-import { PromotionLink } from "../components/CaseStudy/PromotionLink";
-import { ProductConception } from "../components/CaseStudy/ProductConception";
-import { Challenges } from "../components/CaseStudy/Challenges";
-import { Improvements } from "../components/CaseStudy/Improvements";
+import { Footer } from "../components/Footer"
+import { Header } from "../components/Header/Header"
+import { PromotionLink } from "../components/CaseStudy/PromotionLink"
+import { ProductConception } from "../components/CaseStudy/ProductConception"
+import { Challenges } from "../components/CaseStudy/Challenges"
+import { Improvements } from "../components/CaseStudy/Improvements"
+import { motion } from "framer-motion"
 
 export const AniFlux = () => {
   return (
@@ -20,7 +21,13 @@ export const AniFlux = () => {
         <ProductConception paragraph="The problem I wanted AniFlux to help solve was that there were a lot of anime-related websites that had outdated designs and bloated with unnecessary content. It became difficult to navigate and digest concise information about specific animes. The goal of this web application is to be able to convey everything about an anime in the least amount of time as possible while visually pleasing the eyes of its users." />
 
         {/* BUG: color hexcodes cannot be used as props ??? */}
-        <section className="bg-primary px-8 py-4 lg:py-16">
+        <motion.section
+          className="bg-primary px-8 py-4 lg:py-16"
+          initial={{ opacity: 0, x: -75 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ ease: "easeInOut", duration: 1 }}
+          viewport={{ once: true }}
+        >
           <div className="mx-auto max-w-4xl justify-between py-4 lg:flex">
             <div className="pb-4">
               <div className="font-primary text-xs font-semibold uppercase text-slate-700 opacity-70">
@@ -32,40 +39,32 @@ export const AniFlux = () => {
             </div>
             <div className="flex flex-wrap gap-1">
               <div className="grid">
-                <div
-                  className={`col-start-1 row-start-1 h-36 w-24 bg-[#EDF1F5] sm:w-36`}
-                ></div>
+                <div className={`col-start-1 row-start-1 h-36 w-24 bg-[#EDF1F5] sm:w-36`}></div>
                 <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-black">
                   #EDF1F5
                 </p>
               </div>
               <div className="grid">
-                <div
-                  className={`col-start-1 row-start-1 h-36 w-24 bg-[#7B8EA1] sm:w-36`}
-                ></div>
+                <div className={`col-start-1 row-start-1 h-36 w-24 bg-[#7B8EA1] sm:w-36`}></div>
                 <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-black">
                   #7B8EA1
                 </p>
               </div>
               <div className="grid">
-                <div
-                  className={`col-start-1 row-start-1 h-36 w-24 bg-[#2d2d29] sm:w-36`}
-                ></div>
+                <div className={`col-start-1 row-start-1 h-36 w-24 bg-[#2d2d29] sm:w-36`}></div>
                 <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
                   #2D2D29
                 </p>
               </div>
               <div className="grid">
-                <div
-                  className={`col-start-1 row-start-1 h-36 w-24 bg-[#3480EA] sm:w-36`}
-                ></div>
+                <div className={`col-start-1 row-start-1 h-36 w-24 bg-[#3480EA] sm:w-36`}></div>
                 <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
                   #3480EA
                 </p>
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         <Challenges
           firstHeading="Pagination"
@@ -84,5 +83,5 @@ export const AniFlux = () => {
 
       <Footer />
     </div>
-  );
-};
+  )
+}

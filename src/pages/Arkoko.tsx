@@ -4,6 +4,7 @@ import { PromotionLink } from "../components/CaseStudy/PromotionLink"
 import { ProductConception } from "../components/CaseStudy/ProductConception"
 import { Challenges } from "../components/CaseStudy/Challenges"
 import { Improvements } from "../components/CaseStudy/Improvements"
+import { motion } from "framer-motion"
 
 export const Arkoko = () => {
   return (
@@ -31,7 +32,13 @@ export const Arkoko = () => {
         />
 
         {/* cant put color hexcodes as props for some reason */}
-        <section className="bg-primary px-8 py-4 lg:py-16">
+        <motion.section
+          className="bg-primary px-8 py-4 lg:py-16"
+          initial={{ opacity: 0, x: -75 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ ease: "easeInOut", duration: 1 }}
+          viewport={{ once: true }}
+        >
           <div className="mx-auto max-w-4xl justify-between py-4 lg:flex">
             <div className="pb-4">
               <div className="font-primary text-xs font-semibold uppercase text-slate-700 opacity-70">
@@ -68,7 +75,7 @@ export const Arkoko = () => {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         <Challenges
           firstHeading="Oreha Crafting Calculator"

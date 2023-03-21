@@ -1,10 +1,11 @@
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header/Header";
-import { PromotionLink } from "../components/CaseStudy/PromotionLink";
-import { ProductConception } from "../components/CaseStudy/ProductConception";
-import { Colors } from "../components/CaseStudy/Colors";
-import { Challenges } from "../components/CaseStudy/Challenges";
-import { Improvements } from "../components/CaseStudy/Improvements";
+import { Footer } from "../components/Footer"
+import { Header } from "../components/Header/Header"
+import { PromotionLink } from "../components/CaseStudy/PromotionLink"
+import { ProductConception } from "../components/CaseStudy/ProductConception"
+import { Colors } from "../components/CaseStudy/Colors"
+import { Challenges } from "../components/CaseStudy/Challenges"
+import { Improvements } from "../components/CaseStudy/Improvements"
+import { motion } from "framer-motion"
 
 export const Snippits = () => {
   return (
@@ -19,8 +20,15 @@ export const Snippits = () => {
 
       <main>
         <ProductConception paragraph="I was forgetting a lot of basic code syntax while learning how to program as do many other coders. This web application is meant to serve as a mini cheatsheet filled with code excerpts and other tips and tricks I've found over the course of teaching myself how to code as a web developer." />
+
         {/* cant put color hexcodes as props for some reason */}
-        <section className="bg-primary px-8 py-4 lg:py-16">
+        <motion.section
+          className="bg-primary px-8 py-4 lg:py-16"
+          initial={{ opacity: 0, x: -75 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ ease: "easeInOut", duration: 1 }}
+          viewport={{ once: true }}
+        >
           <div className="mx-auto max-w-4xl justify-between py-4 lg:flex">
             <div className="pb-4">
               <div className="font-primary text-xs font-semibold uppercase text-slate-700 opacity-70">
@@ -32,32 +40,26 @@ export const Snippits = () => {
             </div>
             <div className="flex flex-wrap gap-1">
               <div className="grid">
-                <div
-                  className={`col-start-1 row-start-1 h-36 w-24 bg-[#F1EFE9] sm:w-36`}
-                ></div>
+                <div className={`col-start-1 row-start-1 h-36 w-24 bg-[#F1EFE9] sm:w-36`}></div>
                 <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-black">
                   #F1EFE9
                 </p>
               </div>
               <div className="grid">
-                <div
-                  className={`col-start-1 row-start-1 h-36 w-24 bg-[#20232b] sm:w-36`}
-                ></div>
+                <div className={`col-start-1 row-start-1 h-36 w-24 bg-[#20232b] sm:w-36`}></div>
                 <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
                   #20232B
                 </p>
               </div>
               <div className="grid">
-                <div
-                  className={`col-start-1 row-start-1 h-36 w-24 bg-[#282828] sm:w-36`}
-                ></div>
+                <div className={`col-start-1 row-start-1 h-36 w-24 bg-[#282828] sm:w-36`}></div>
                 <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
                   #282828
                 </p>
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         <Challenges
           firstHeading="Design Format"
@@ -75,5 +77,5 @@ export const Snippits = () => {
 
       <Footer />
     </div>
-  );
-};
+  )
+}
