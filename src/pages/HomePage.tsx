@@ -4,6 +4,8 @@ import { Header } from "../components/Header/Header"
 import { ProjectSection } from "../components/ProjectSection"
 import { getArkokoStack, getAnifluxStack, getSnippitsStack } from "../helpers/GetStack"
 
+//TODO update data icons with https://devicon.dev/
+
 export const HomePage = () => {
   return (
     <div className="min-h-screen  bg-primary font-normal text-darktext">

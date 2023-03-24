@@ -28,8 +28,10 @@ export const About = () => {
             transition={{ ease: "easeInOut", duration: 1, delay: 3 }}
             viewport={{ once: true }}
           >
-            <div className="flex gap-16">
-              <div className="basis-1/5 py-16 font-cabin text-2xl">Profile</div>
+            <div className="flex gap-4 sm:gap-16">
+              <div className="min-w-[8rem] max-w-[8rem] max-w-[8rem] py-16 font-cabin text-2xl">
+                Profile
+              </div>
               <div className="basis-4/5 py-16">
                 <div className="flex flex-wrap gap-10">
                   <div className="flex min-w-[10rem] flex-col gap-4">
@@ -51,9 +53,11 @@ export const About = () => {
               </div>
             </div>
 
-            <div className="flex gap-16">
-              <div className="basis-1/5 py-16 font-cabin text-2xl">Languages for computers</div>
-              <div className="basis-4/5 py-16">
+            <div className="flex gap-4 sm:gap-16">
+              <div className="min-w-[8rem] max-w-[8rem] py-16 font-cabin text-2xl">
+                Languages for computers
+              </div>
+              <div className="basis-auto py-16">
                 <div className="flex flex-wrap gap-10">
                   <div className="flex min-w-[15rem] flex-col gap-4">
                     <h4 className="font-cabin text-xl">🔥 The Daily</h4>
@@ -76,7 +80,7 @@ export const About = () => {
                     </ul>
                   </div>
                   <div className="flex min-w-[15rem] flex-col gap-4">
-                    <h4 className="font-cabin text-xl">👨‍🎓 Learning more about</h4>
+                    <h4 className="font-cabin text-xl">👨‍🎓 Learning more</h4>
                     <ul className="space-y-2 font-inter text-sm opacity-[0.85]">
                       <li>Jest</li>
                       <li>Figma</li>
@@ -98,8 +102,10 @@ export const About = () => {
               </div>
             </div>
 
-            <div className="flex gap-16">
-              <div className="basis-1/5 py-16 font-cabin text-2xl">Languages for humans</div>
+            <div className="flex gap-4 sm:gap-16">
+              <div className="min-w-[8rem] max-w-[8rem] py-16 font-cabin text-2xl">
+                Languages for humans
+              </div>
               <div className="basis-4/5 py-16">
                 <div className="flex flex-wrap gap-10">
                   <div className="flex min-w-[10rem] flex-col gap-4">
@@ -118,8 +124,8 @@ export const About = () => {
               </div>
             </div>
 
-            <div className="flex gap-16">
-              <div className="basis-1/5 py-16 font-cabin text-2xl">Interests</div>
+            <div className="flex gap-4 sm:gap-16">
+              <div className="min-w-[8rem] max-w-[8rem] py-16 font-cabin text-2xl">Interests</div>
               <div className="basis-4/5 py-16">
                 <div className="flex flex-wrap gap-10">
                   <div className="flex min-w-[15rem] flex-col gap-4">
