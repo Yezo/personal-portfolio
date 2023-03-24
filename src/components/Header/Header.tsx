@@ -128,7 +128,7 @@ export const Header = ({
               to="/about"
               className="inline-flex select-none items-center gap-2 rounded bg-transparent px-4 py-2 font-urban font-semibold text-darktext shadow-md ring-1 ring-black/[.70] transition-colors hover:bg-accent hover:text-primary focus:outline-none"
             >
-              <button>Learn More</button>
+              <button>Learn more</button>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -144,7 +144,7 @@ export const Header = ({
               to="mailto:kvo.codes@gmail.com"
               className="inline-flex select-none items-center gap-2 rounded bg-accent px-4 py-2 font-urban  font-semibold text-white shadow-md ring-1 ring-black/[.70] transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none"
             >
-              <button>Contact Me</button>
+              <button>Get in touch</button>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"

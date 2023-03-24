@@ -14,9 +14,7 @@ export const HomePage = () => {
           homepage={true}
           subtitle="Hey, call me Kev"
           textOrientation="left"
-          description="My passion thrives in frontend web development where I carefully build mobile-first
-              responsive designs. Currently focused on honing my craft to forge seamless user
-              experiences. Let's build a product together and bring your vision to life."
+          description="My passion thrives in frontend web development where I carefully build mobile-first responsive designs. Currently focused on honing my craft in order to forge better and unforgettable user experiences. I'm looking to join a team of creative designers and developers. If you think I am a good fit, let's partner up."
         >
           Software engineer at work - digital{" "}
           <span className="animate-text bg-gradient-to-r  from-teal-500 via-purple-500  to-orange-500  bg-clip-text  text-transparent">
@@ -25,7 +23,7 @@ export const HomePage = () => {
           at heart.
         </Header>
         <m.div
-          className="hidden min-w-full animate-bounce place-items-center text-accent sm:mt-56 sm:grid"
+          className="hidden min-w-full animate-bounce place-items-center text-accent sm:mt-48 sm:grid"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 0.85, delay: 3.5 }}
