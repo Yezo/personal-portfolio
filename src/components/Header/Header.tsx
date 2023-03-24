@@ -3,23 +3,34 @@ import { NavIcon } from "./NavIcon"
 import { motion } from "framer-motion"
 
 type Props = {
-  title: string
+  title?: string
   subtitle: string
+  description?: string
   textOrientation: string
   imageURL?: string
   imageTitle?: string
+  children?: React.ReactNode
+  homepage?: boolean
 }
 
-export const Header = ({ title, subtitle, textOrientation, imageURL, imageTitle }: Props) => {
+export const Header = ({
+  subtitle,
+  textOrientation,
+  imageURL,
+  imageTitle,
+  description,
+  children,
+  homepage,
+}: Props) => {
   return (
-    <header className="max-h-[90vh]">
-      <div className=" mx-auto mb-20 flex max-w-4xl items-center justify-between px-8 pt-8">
+    <header className="mb-8 max-h-[90vh]">
+      <div className=" mx-auto mb-20 flex max-w-4xl items-center justify-between p-8">
         <Link to="/">
           <motion.h1
             className="font-heading text-4xl tracking-tighter transition-colors hover:text-accent"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ ease: "easeInOut", duration: 0.85 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ ease: "easeInOut", duration: 1, delay: 0.5 }}
             viewport={{ once: true }}
           >
             kv.
@@ -27,9 +38,9 @@ export const Header = ({ title, subtitle, textOrientation, imageURL, imageTitle 
         </Link>
         <motion.nav
           className="flex gap-4 "
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ ease: "easeInOut", duration: 0.85 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: 1, delay: 0.5 }}
           viewport={{ once: true }}
         >
           <NavIcon tooltipText={"Contact Me"} url={"mailto:kvo.codes@gmail.com"}>
@@ -49,43 +60,99 @@ export const Header = ({ title, subtitle, textOrientation, imageURL, imageTitle 
           </NavIcon>
         </motion.nav>
       </div>
-      <section className="mx-auto mb-20 max-h-screen max-w-4xl space-y-4 px-8 md:space-y-8">
+      <section className="mx-auto max-h-screen max-w-4xl space-y-4 px-8 pb-20 md:space-y-8">
         <div>
           <motion.h2
-            className="font-primary mb-2 font-semibold uppercase tracking-widest text-slate-700 opacity-30"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ ease: "easeInOut", duration: 0.85 }}
+            className="font-primary mb-2 font-semibold uppercase tracking-widest text-slate-500 opacity-10"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ ease: "easeInOut", duration: 1, delay: 1 }}
             viewport={{ once: true }}
           >
             // {subtitle}
           </motion.h2>
           <motion.h2
-            className={`max-w-full font-heading text-5xl text-darktext md:text-7xl ${
+            className={`max-w-full font-cabin text-5xl font-bold tracking-tight text-darktext md:pt-8 md:text-6xl ${
               textOrientation === "left" ? "text-left" : "text-center"
             }`}
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ ease: "easeInOut", duration: 0.85 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ ease: "easeInOut", duration: 1, delay: 1.5 }}
             viewport={{ once: true }}
           >
-            {title}
+            {children}
           </motion.h2>
         </div>
+        {description && (
+          <motion.div
+            className="flex min-w-full pt-4"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ ease: "easeInOut", duration: 0.85, delay: 2 }}
+            viewport={{ once: true }}
+          >
+            <p className="max-w-[50ch] font-inter text-sm leading-7 opacity-80">{description}</p>
+          </motion.div>
+        )}
         {imageURL && (
           <motion.div
             className="grid w-full place-items-center"
-            initial={{ opacity: 0, x: -75 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ ease: "easeInOut", duration: 0.85, delay: 0.2 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ ease: "easeInOut", duration: 0.85, delay: 2 }}
             viewport={{ once: true }}
           >
             <img
               src={imageURL}
               alt={imageTitle}
-              className="max-h-[25rem] rounded shadow-md ring-1 ring-darktext/20"
+              className=" max-h-[365px] max-w-[325px] rounded-[3.5rem] shadow-md ring-1 ring-darktext/20"
               loading="lazy"
             />
+          </motion.div>
+        )}
+        {homepage && (
+          <motion.div
+            className="space-x-4"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ ease: "easeInOut", duration: 0.85, delay: 2.5 }}
+            viewport={{ once: true }}
+          >
+            <Link
+              to="/about"
+              className="inline-flex select-none items-center gap-2 rounded bg-transparent px-4 py-2 font-urban font-semibold text-darktext shadow-md ring-1 ring-black/[.70] transition-colors hover:bg-accent hover:text-primary focus:outline-none"
+            >
+              <button>Learn More</button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-arrow-up-right-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z" />
+              </svg>
+            </Link>
+            <Link
+              to="mailto:kvo.codes@gmail.com"
+              className="inline-flex select-none items-center gap-2 rounded bg-accent px-4 py-2 font-urban  font-semibold text-white shadow-md ring-1 ring-black/[.70] transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none"
+            >
+              <button>Contact Me</button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-arrow-right "
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+            </Link>
           </motion.div>
         )}
       </section>

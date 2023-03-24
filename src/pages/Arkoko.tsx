@@ -10,12 +10,17 @@ export const Arkoko = () => {
   return (
     <div className="min-h-screen  bg-primary font-normal text-darktext">
       <Header
-        title="The ultimate toolbox application for Lost Ark"
         subtitle="Arkoko (2023)"
         textOrientation="center"
         imageURL="/arkoko.webp"
         imageTitle="Arkoko"
-      />
+      >
+        The ultimate{" "}
+        <span className="animate-text bg-gradient-to-r  from-teal-500 via-purple-500  to-orange-500  bg-clip-text  text-transparent">
+          toolbox
+        </span>{" "}
+        application for Lost Ark
+      </Header>
 
       <main>
         <ProductConception

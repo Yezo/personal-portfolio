@@ -11,12 +11,17 @@ export const Snippits = () => {
   return (
     <div className="min-h-screen  bg-primary font-normal text-darktext">
       <Header
-        title="Unforgettable code snippets for coders with forgettable minds"
         subtitle="Snippits (2023)"
         textOrientation="center"
         imageURL="/snippits.webp"
         imageTitle="Snippits"
-      />
+      >
+        Unforgettable{" "}
+        <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
+          code snippets
+        </span>{" "}
+        for coders with forgettable minds
+      </Header>
 
       <main>
         <ProductConception paragraph="I was forgetting a lot of basic code syntax while learning how to program as do many other coders. This web application is meant to serve as a mini cheatsheet filled with code excerpts and other tips and tricks I've found over the course of teaching myself how to code as a web developer." />

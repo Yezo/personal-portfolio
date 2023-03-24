@@ -10,12 +10,17 @@ export const AniFlux = () => {
   return (
     <div className="min-h-screen bg-primary font-normal text-darktext">
       <Header
-        title="A sleek and modern design for the new age of anime"
         subtitle="AniFlux (2023)"
         textOrientation="center"
         imageURL="/aniflux.webp"
         imageTitle="AniFlux"
-      />
+      >
+        A sleek and modern design for the{" "}
+        <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
+          new age
+        </span>{" "}
+        of anime
+      </Header>
 
       <main>
         <ProductConception paragraph="The problem I wanted AniFlux to help solve was that there were a lot of anime-related websites that had outdated designs and bloated with unnecessary content. It became difficult to navigate and digest concise information about specific animes. The goal of this web application is to be able to convey everything about an anime in the least amount of time as possible while visually pleasing the eyes of its users." />

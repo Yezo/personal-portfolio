@@ -1,46 +1,77 @@
+import { motion } from "framer-motion"
 import { Footer } from "../components/Footer"
 import { Header } from "../components/Header/Header"
 import { ProjectSection } from "../components/ProjectSection"
+import { getArkokoStack, getAnifluxStack, getSnippitsStack } from "../helpers/GetStack"
 
 export const HomePage = () => {
   return (
     <div className="min-h-screen  bg-primary font-normal text-darktext">
       <div className="mx-auto max-w-4xl pb-20">
         <Header
-          title="I'm a full-stack software developer equipped with efficient solutions to your diverse problems."
+          homepage={true}
           subtitle="Hey, call me Kev"
           textOrientation="left"
-        />
-        <main>
-          <section className="divide-y divide-stone-300 px-8" id="projects">
+          description="My passion thrives in frontend web development where I carefully build mobile-first
+              responsive designs. Currently focused on honing my craft to forge seamless user
+              experiences. Let's build a product together and bring your vision to life."
+        >
+          Software engineer at work - digital{" "}
+          <span className="animate-text bg-gradient-to-r  from-teal-500 via-purple-500  to-orange-500  bg-clip-text  text-transparent">
+            designer
+          </span>{" "}
+          at heart.
+        </Header>
+        <motion.div
+          className="hidden min-w-full animate-bounce place-items-center text-accent sm:mt-56 sm:grid"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ ease: "easeInOut", duration: 0.85, delay: 3.5 }}
+          viewport={{ once: true }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="8 12 12 16 16 12"></polyline>
+            <line x1="12" y1="8" x2="12" y2="16"></line>
+          </svg>
+        </motion.div>
+        <main className="pt-20">
+          <section className="divide-y divide-stone-300" id="projects">
             <ProjectSection
               title="Arkoko"
-              technologies={["React", "NodeJS", "Express", "MongoDB", "TypeScript", "TailwindCSS"]}
-              description="Arkoko is a MERN stack web application that serves as a data-driven game analytics platform for Lost Ark. It aims to provide players the necessary data for users to develop informed in-game decisions all at a single glance. Spend more time playing the game while Arkoko does the heavy-lifting."
-              gitHubLink="https://github.com/Yezo/arkoko"
+              description="Minimizing micro-decisions through analyzing in-game data for Lost Ark. Discover how Arkoko aims to be the leading data-driven resource platform for gamers worldwide."
               caseStudyLink="/project/arkoko"
               demoLink="https://arkoko.vercel.app"
               imageLink="/arkoko.webp"
+              getStack={getArkokoStack}
             ></ProjectSection>
 
             <ProjectSection
               title="AniFlux"
-              technologies={["React", "TypeScript", "TailwindCSS", "PrismJS"]}
-              description="An application built with React that showcases all kinds of anime ranging from currently airing, the most popular anime of all time, or even a random anime provided a user can't choose one themselves. Users are also able to search for any anime themselves with search bar functionality."
-              gitHubLink="https://github.com/Yezo/jikan-anime-project"
+              description="Reimagining what it means to be an anime platform paired with a modern design. Explore in great detail any anime from any time period with AniFlux."
               caseStudyLink="/project/aniflux"
               demoLink="https://aniflux.onrender.com"
               imageLink="/aniflux.webp"
+              getStack={getAnifluxStack}
             ></ProjectSection>
 
             <ProjectSection
               title="Snippits"
-              technologies={["React", "TypeScript", "TailwindCSS"]}
-              description="Programmers often forget basic code syntax while coding. They can now find code snippets among other tips and tricks located here all in one place. Snippits was programmed for users who have the memory of a goldfish made by a programmer with the memory of a goldfish. "
-              gitHubLink="https://github.com/Yezo/snippit"
+              description="A golden repository built for programmers who have the memory of a goldfish made by a programmer with the memory of a goldfish. "
               caseStudyLink="/project/snippits"
               demoLink="https://snippits.vercel.app"
               imageLink="/snippits.webp"
+              getStack={getSnippitsStack}
             ></ProjectSection>
           </section>
         </main>
