@@ -42,8 +42,8 @@ export const About = () => {
                   </div>
                   <div className="flex min-w-[10rem] flex-col gap-4">
                     <h4 className="font-cabin text-xl">
-                      📈 Currently unemployed and looking for opportunities as a passionate software
-                      engineer during a recession?
+                      📈 Unemployed and looking for opportunities as a passionate software engineer
+                      during a recession?
                     </h4>
                     <p className="font-inter text-sm opacity-[0.85]">Yes...</p>
                   </div>
@@ -60,9 +60,9 @@ export const About = () => {
                   <div className="flex min-w-[15rem] flex-col gap-4">
                     <h4 className="font-cabin text-xl">🔥 The Daily</h4>
                     <ul className="space-y-2 font-inter text-sm opacity-[0.85]">
-                      <li>HTML & CSS</li>
-                      <li>Javascript & TypeScript</li>
-                      <li>React & React Router</li>
+                      <li>React</li>
+                      <li>Javascript</li>
+                      <li>TypeScript</li>
                       <li>TailwindCSS</li>
                       <li>Git</li>
                     </ul>
