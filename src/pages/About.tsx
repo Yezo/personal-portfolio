@@ -29,9 +29,7 @@ export const About = () => {
             viewport={{ once: true }}
           >
             <div className="flex gap-4 sm:gap-16">
-              <div className="min-w-[8rem] max-w-[8rem] max-w-[8rem] py-16 font-cabin text-2xl">
-                Profile
-              </div>
+              <div className="min-w-[8rem] max-w-[8rem] py-16 font-cabin text-2xl">Profile</div>
               <div className="basis-4/5 py-16">
                 <div className="flex flex-wrap gap-10">
                   <div className="flex min-w-[10rem] flex-col gap-4">

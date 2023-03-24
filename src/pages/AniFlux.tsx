@@ -23,7 +23,10 @@ export const AniFlux = () => {
       </Header>
 
       <main>
-        <ProductConception paragraph="The problem I wanted AniFlux to help solve was that there were a lot of anime-related websites that had outdated designs and bloated with unnecessary content. It became difficult to navigate and digest concise information about specific animes. The goal of this web application is to be able to convey everything about an anime in the least amount of time as possible while visually pleasing the eyes of its users." />
+        <ProductConception
+          heading="The Motive"
+          paragraph="The problem I wanted AniFlux to help solve was that there were a lot of anime-related websites that had outdated designs and bloated with unnecessary content. It became difficult to navigate and digest concise information about specific animes. The goal of this web application is to be able to convey everything about an anime in the least amount of time as possible while visually pleasing the eyes of its users."
+        />
 
         {/* BUG: color hexcodes cannot be used as props ??? */}
         <motion.section

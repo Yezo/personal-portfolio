@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"
+import { motion as m } from "framer-motion"
 import { Footer } from "../components/Footer"
 import { Header } from "../components/Header/Header"
 import { ProjectSection } from "../components/ProjectSection"
@@ -24,7 +24,7 @@ export const HomePage = () => {
           </span>{" "}
           at heart.
         </Header>
-        <motion.div
+        <m.div
           className="hidden min-w-full animate-bounce place-items-center text-accent sm:mt-56 sm:grid"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -46,7 +46,7 @@ export const HomePage = () => {
             <polyline points="8 12 12 16 16 12"></polyline>
             <line x1="12" y1="8" x2="12" y2="16"></line>
           </svg>
-        </motion.div>
+        </m.div>
         <main className="pt-20">
           <section className="divide-y divide-stone-300" id="projects">
             <ProjectSection

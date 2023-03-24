@@ -1,11 +1,17 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate, useLocation } from "react-router-dom"
 export const Footer = () => {
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  function handleRefreshHomePage() {
+    return location.pathname === "/" ? window.location.reload() : navigate("/")
+  }
   return (
     <footer className="min-w-screen bg-accent px-8 tracking-tighter text-primary">
       <div className="mx-auto flex max-w-4xl flex-col items-center justify-between gap-4 py-10 px-8 md:flex-row">
-        <a href="/">
+        <Link to="/" onClick={handleRefreshHomePage}>
           <h2 className="font-heading text-4xl transition-all hover:italic">kv.</h2>
-        </a>
+        </Link>
 
         <ul className="flex flex-wrap items-center justify-center gap-4 font-inter text-sm font-semibold tracking-tight">
           <Link

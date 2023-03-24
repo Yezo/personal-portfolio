@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate, useLocation } from "react-router-dom"
 import { NavIcon } from "./NavIcon"
 import { motion } from "framer-motion"
 
@@ -22,10 +22,16 @@ export const Header = ({
   children,
   homepage,
 }: Props) => {
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  function handleRefreshHomePage() {
+    return location.pathname === "/" ? window.location.reload() : navigate("/")
+  }
   return (
     <header className="mb-8 max-h-[90vh]">
       <div className=" mx-auto mb-20 flex max-w-4xl items-center justify-between p-8">
-        <Link to="/">
+        <Link to="/" onClick={handleRefreshHomePage}>
           <motion.h1
             className="font-heading text-4xl tracking-tighter transition-colors hover:text-accent"
             initial={{ opacity: 0 }}

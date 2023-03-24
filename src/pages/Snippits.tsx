@@ -24,7 +24,10 @@ export const Snippits = () => {
       </Header>
 
       <main>
-        <ProductConception paragraph="I was forgetting a lot of basic code syntax while learning how to program as do many other coders. This web application is meant to serve as a mini cheatsheet filled with code excerpts and other tips and tricks I've found over the course of teaching myself how to code as a web developer." />
+        <ProductConception
+          heading="The Motive"
+          paragraph="I was forgetting a lot of basic code syntax while learning how to program as do many other coders. This web application is meant to serve as a mini cheatsheet filled with code excerpts and other tips and tricks I've found over the course of teaching myself how to code as a web developer."
+        />
 
         {/* cant put color hexcodes as props for some reason */}
         <motion.section

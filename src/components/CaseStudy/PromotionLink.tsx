@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"
+import { motion as m } from "framer-motion"
 import { Link } from "react-router-dom"
 
 type Props = {
@@ -7,9 +7,9 @@ type Props = {
 
 export const PromotionLink = ({ URL }: Props) => {
   return (
-    <motion.section
+    <m.section
       className="bg-primary py-12 px-8 lg:py-16"
-      initial={{ opacity: 0, x: -75 }}
+      initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ ease: "easeInOut", duration: 1 }}
       viewport={{ once: true }}
@@ -22,6 +22,6 @@ export const PromotionLink = ({ URL }: Props) => {
           </div>
         </Link>
       </div>
-    </motion.section>
+    </m.section>
   )
 }

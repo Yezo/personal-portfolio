@@ -4,11 +4,12 @@ import { PromotionLink } from "../components/CaseStudy/PromotionLink"
 import { ProductConception } from "../components/CaseStudy/ProductConception"
 import { Challenges } from "../components/CaseStudy/Challenges"
 import { Improvements } from "../components/CaseStudy/Improvements"
-import { motion } from "framer-motion"
+import { motion as m } from "framer-motion"
+import CaseStudyHeading from "../components/CaseStudy/CaseStudyHeading"
 
 export const Arkoko = () => {
   return (
-    <div className="min-h-screen  bg-primary font-normal text-darktext">
+    <div className="min-h-screen bg-primary font-normal text-darktext">
       <Header
         subtitle="Arkoko (2023)"
         textOrientation="center"
@@ -16,7 +17,7 @@ export const Arkoko = () => {
         imageTitle="Arkoko"
       >
         The ultimate{" "}
-        <span className="animate-text bg-gradient-to-r  from-teal-500 via-purple-500  to-orange-500  bg-clip-text  text-transparent">
+        <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500  to-orange-500 bg-clip-text text-transparent">
           toolbox
         </span>{" "}
         application for Lost Ark
@@ -24,12 +25,14 @@ export const Arkoko = () => {
 
       <main>
         <ProductConception
+          heading="The Motive"
           paragraph="Arkoko was created with the objective to help alleviate the
                 problem plaguing MMORPG players: too much information to process
                 while playing the game. Users want to be as efficient in the
                 least amount of time as possible but many players end up
                 spending more time on calculating what's efficient to do instead
                 of actually playing the game. All games are built upon numbers and statistics and is the driving force behind Arkoko."
+          heading2="New Platform"
           paragraph2="Many games have a lot of online resources to help new and
                 existing players learn more about the game but many websites
                 lack certain features that others have and vice-versa. Arkoko
@@ -37,23 +40,16 @@ export const Arkoko = () => {
         />
 
         {/* cant put color hexcodes as props for some reason */}
-        <motion.section
+        <m.section
           className="bg-primary px-8 py-4 lg:py-16"
-          initial={{ opacity: 0, x: -75 }}
+          initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ ease: "easeInOut", duration: 1 }}
           viewport={{ once: true }}
         >
           <div className="mx-auto max-w-4xl justify-between py-4 lg:flex">
-            <div className="pb-4">
-              <div className="font-primary text-xs font-semibold uppercase text-slate-700 opacity-70">
-                // 02
-              </div>
-              <h3 className="font-primary text-2xl font-semibold leading-[1.25] tracking-tighter">
-                Colors
-              </h3>
-            </div>
-            <div className="flex flex-wrap gap-1">
+            <CaseStudyHeading index="02" title="Colors" />
+            <div className="flex flex-wrap gap-1 py-10">
               <div className="grid">
                 <div
                   className={`col-start-1 row-start-1 h-36 w-24 bg-arkokoColorOne sm:w-36`}
@@ -80,7 +76,7 @@ export const Arkoko = () => {
               </div>
             </div>
           </div>
-        </motion.section>
+        </m.section>
 
         <Challenges
           firstHeading="Oreha Crafting Calculator"

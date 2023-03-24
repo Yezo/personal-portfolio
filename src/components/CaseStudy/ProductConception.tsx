@@ -1,35 +1,32 @@
-import { motion } from "framer-motion"
+import { motion as m } from "framer-motion"
+import CaseStudyHeading from "./CaseStudyHeading"
+import CaseStudyParagraph from "./CaseStudyParagraph"
 
 type Props = {
+  heading: string
+  heading2?: string
   paragraph: string
   paragraph2?: string
 }
 
-export const ProductConception = ({ paragraph, paragraph2 }: Props) => {
+export const ProductConception = ({ heading, heading2, paragraph, paragraph2 }: Props) => {
   return (
-    <motion.section
+    <m.section
       className=" bg-primary px-8 py-4 lg:py-16"
-      initial={{ opacity: 0, x: -75 }}
+      initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ ease: "easeInOut", duration: 0.85, delay: 0.2 }}
+      transition={{ ease: "easeInOut", duration: 1 }}
       viewport={{ once: true }}
     >
       <div className="mx-auto max-w-4xl justify-between py-4 lg:flex">
-        <div className="pb-5">
-          <div className="font-primary text-xs font-semibold uppercase text-slate-700 opacity-70">
-            // 01
-          </div>
-          <h3 className="font-primary text-2xl font-semibold leading-[1.25] tracking-tighter">
-            Product Conception
-          </h3>
-        </div>
-        <div className="space-y-8 lg:max-w-[50ch]">
-          <p className=" font-inter text-sm leading-[1.75] opacity-80">{paragraph}</p>
-          {paragraph2 && (
-            <p className="font-inter text-sm leading-[1.75] opacity-80">{paragraph2}</p>
+        <CaseStudyHeading index="01" title="Product Conception" />
+        <div className="space-y-8">
+          <CaseStudyParagraph title={heading}>{paragraph}</CaseStudyParagraph>
+          {paragraph2 && heading2 && (
+            <CaseStudyParagraph title={heading2}>{paragraph2}</CaseStudyParagraph>
           )}
         </div>
       </div>
-    </motion.section>
+    </m.section>
   )
 }
