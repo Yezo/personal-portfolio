@@ -7,6 +7,9 @@ module.exports = {
       fontFamily: {
         inter: ['"Inter", sans-serif;'],
         heading: ['"Gloock", serif;'],
+        cabin: ['"Cabin", sans-serif;'],
+        urban: ['"Urbanist", sans-serif;'],
+        forum: ['"Koh Santepheap", cursive;'],
       },
       colors: {
         primary: "#ECECEC",
@@ -41,17 +44,24 @@ module.exports = {
           from: { opacity: 0, transform: "translateX(2px)" },
           to: { opacity: 1, transform: "translateX(0)" },
         },
+        text: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+          },}
       },
       animation: {
-        slideDownAndFade:
-          "slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)",
-        slideLeftAndFade:
-          "slideLeftAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)",
+        slideDownAndFade: "slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)",
+        slideLeftAndFade: "slideLeftAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)",
         slideUpAndFade: "slideUpAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)",
-        slideRightAndFade:
-          "slideRightAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)",
+        slideRightAndFade: "slideRightAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)",
+        text: "text 5s ease infinite",
       },
     },
   },
   plugins: [],
-};
+}
