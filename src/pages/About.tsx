@@ -10,9 +10,7 @@ export const About = () => {
           homepage={true}
           subtitle="Hey, call me Kev"
           textOrientation="left"
-          description="My passion thrives in frontend web development where I carefully build mobile-first
-              responsive designs. Currently focused on honing my craft to forge seamless user
-              experiences. Let's build a product together and bring your vision to life."
+          description="Self-taught fullstack software engineer from Canada that specializes in front-end operations. My focus lies in crafting mobile-first responsive websites. I have an affinity for UI/UX design and like to express my creative side through unique designs for my portfolio and projects. Web development has become my creative outlet and it has been a blast to progressively hone my ability to translate my visions to the browser."
         >
           Get to know more{" "}
           <span className="animate-text bg-gradient-to-r  from-teal-500 via-purple-500  to-orange-500  bg-clip-text  text-transparent">
@@ -28,29 +26,6 @@ export const About = () => {
             transition={{ ease: "easeInOut", duration: 1, delay: 3 }}
             viewport={{ once: true }}
           >
-            <div className="flex gap-4 sm:gap-16">
-              <div className="min-w-[8rem] max-w-[8rem] py-16 font-cabin text-2xl">Profile</div>
-              <div className="basis-4/5 py-16">
-                <div className="flex flex-wrap gap-10">
-                  <div className="flex min-w-[10rem] flex-col gap-4">
-                    <h4 className="font-cabin text-xl">👨‍🏫 Self-taught?</h4>
-                    <p className="font-inter text-sm opacity-[0.85]">Yup</p>
-                  </div>
-                  <div className="flex min-w-[10rem] flex-col gap-4">
-                    <h4 className="font-cabin text-xl">⏳ Since when?</h4>
-                    <p className="font-inter text-sm opacity-[0.85]">2021</p>
-                  </div>
-                  <div className="flex min-w-[10rem] flex-col gap-4">
-                    <h4 className="font-cabin text-xl">
-                      📈 Unemployed and looking for opportunities as a passionate software engineer
-                      during a recession?
-                    </h4>
-                    <p className="font-inter text-sm opacity-[0.85]">Yes...</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div className="flex gap-4 sm:gap-16">
               <div className="min-w-[8rem] max-w-[8rem] py-16 font-cabin text-2xl">
                 Languages for computers
@@ -80,12 +55,12 @@ export const About = () => {
                   <div className="flex min-w-[15rem] flex-col gap-4">
                     <h4 className="font-cabin text-xl">👨‍🎓 Learning more</h4>
                     <ul className="space-y-2 font-inter text-sm opacity-[0.85]">
+                      <li>Framer Motion</li>
                       <li>Jest</li>
                       <li>Figma</li>
                       <li>SQL</li>
-                      <li>Zustand</li>
                       <li>Redux</li>
-                      <li>Framer Motion</li>
+                      <li>Storybook</li>
                     </ul>
                   </div>
                   <div className="flex min-w-[15rem] flex-col gap-4">

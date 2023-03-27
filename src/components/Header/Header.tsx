@@ -11,6 +11,7 @@ type Props = {
   imageTitle?: string
   children?: React.ReactNode
   homepage?: boolean
+  learn?: boolean
 }
 
 export const Header = ({
@@ -21,6 +22,7 @@ export const Header = ({
   description,
   children,
   homepage,
+  learn,
 }: Props) => {
   const navigate = useNavigate()
   const location = useLocation()
@@ -124,22 +126,24 @@ export const Header = ({
             transition={{ ease: "easeInOut", duration: 0.85, delay: 2.5 }}
             viewport={{ once: true }}
           >
-            <Link
-              to="/about"
-              className="inline-flex select-none items-center gap-2 rounded bg-transparent px-4 py-2 font-urban font-semibold text-darktext shadow-md ring-1 ring-black/[.70] transition-colors hover:bg-accent hover:text-primary focus:outline-none"
-            >
-              <button>Learn more</button>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="bi bi-arrow-up-right-circle-fill"
-                viewBox="0 0 16 16"
+            {learn && (
+              <Link
+                to="/about"
+                className="inline-flex select-none items-center gap-2 rounded bg-transparent px-4 py-2 font-urban font-semibold text-darktext shadow-md ring-1 ring-black/[.70] transition-colors hover:bg-accent hover:text-primary focus:outline-none"
               >
-                <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z" />
-              </svg>
-            </Link>
+                <button>Learn more</button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-arrow-up-right-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z" />
+                </svg>
+              </Link>
+            )}
             <Link
               to="mailto:kvo.codes@gmail.com"
               className="inline-flex select-none items-center gap-2 rounded bg-accent px-4 py-2 font-urban  font-semibold text-white shadow-md ring-1 ring-black/[.70] transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none"

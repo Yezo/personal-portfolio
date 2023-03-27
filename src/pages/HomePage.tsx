@@ -12,6 +12,7 @@ export const HomePage = () => {
       <div className="mx-auto max-w-4xl pb-20">
         <Header
           homepage={true}
+          learn={true}
           subtitle="Hey, call me Kev"
           textOrientation="left"
           description="My passion thrives in frontend web development where I carefully build mobile-first responsive designs. Currently focused on honing my craft in order to forge better and unforgettable user experiences. I'm looking to join a team of creative designers and developers. If you think I am a good fit, let's partner up."
