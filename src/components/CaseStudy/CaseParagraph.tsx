@@ -1,12 +1,10 @@
 type Props = {
-  title: string
   children?: React.ReactNode
 }
 
-export const CaseParagraph = ({ title, children }: Props) => {
+export const CaseParagraph = ({ children }: Props) => {
   return (
-    <div className="py-10 lg:max-w-[50ch]">
-      <h4 className="font-cabin font-bold uppercase tracking-tight opacity-80">{title}</h4>
+    <div className="divide-y divide-stone-300 py-10 lg:max-w-[50ch]">
       <p className=" font-inter text-sm leading-[2.2] opacity-80">{children}</p>
     </div>
   )

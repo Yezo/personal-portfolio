@@ -10,9 +10,10 @@ module.exports = {
         cabin: ['"Cabin", sans-serif;'],
         urban: ['"Urbanist", sans-serif;'],
         forum: ['"Koh Santepheap", cursive;'],
+        faustina: ['"Faustina", serif;'],
       },
       colors: {
-        primary: "#ECECEC",
+        primary: "#F5F5F5",
         accent: "#415C4F",
         darktext: "#191919",
         gray: "#EDF1F5",
@@ -45,14 +46,15 @@ module.exports = {
           to: { opacity: 1, transform: "translateX(0)" },
         },
         text: {
-          '0%, 100%': {
-            'background-size': '200% 200%',
-            'background-position': 'left center',
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
           },
-          '50%': {
-            'background-size': '200% 200%',
-            'background-position': 'right center',
-          },}
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+        },
       },
       animation: {
         slideDownAndFade: "slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)",

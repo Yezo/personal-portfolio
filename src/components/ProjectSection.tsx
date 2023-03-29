@@ -38,11 +38,11 @@ export const ProjectSection = ({
         <div className="border-b-[1px] border-darktext/40 pb-6">
           <div className="flex flex-col gap-3">
             <Link to={demoLink} target="_blank" rel="noreferrer">
-              <h3 className="font-urban text-4xl leading-[1.25] tracking-tight opacity-90 hover:text-accent">
+              <h3 className="font-faustina text-4xl leading-[1.25] tracking-tight opacity-90 hover:text-accent">
                 {title}
               </h3>
             </Link>
-            <p className="hidden font-urban text-sm italic sm:flex sm:gap-2 ">{getStack()}</p>
+            <p className="hidden sm:flex sm:gap-2 ">{getStack()}</p>
           </div>
         </div>
         <div className="flex flex-col gap-8">

@@ -35,7 +35,7 @@ export const Header = ({
       <div className=" mx-auto mb-20 flex max-w-4xl items-center justify-between p-8">
         <Link to="/" onClick={handleRefreshHomePage}>
           <motion.h1
-            className="font-heading text-4xl tracking-tighter transition-colors hover:text-accent"
+            className="font-faustina text-4xl tracking-tighter transition-colors hover:text-accent"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ ease: "easeInOut", duration: 1, delay: 0.5 }}
@@ -71,7 +71,7 @@ export const Header = ({
       <section className="mx-auto max-h-screen max-w-4xl space-y-4 px-8 pb-20 md:space-y-8">
         <div>
           <motion.h2
-            className="font-primary mb-2 font-semibold uppercase tracking-widest text-slate-500 opacity-10"
+            className="mb-2 font-urban font-semibold uppercase tracking-widest text-slate-500 opacity-10"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ ease: "easeInOut", duration: 1, delay: 1 }}
@@ -80,7 +80,7 @@ export const Header = ({
             // {subtitle}
           </motion.h2>
           <motion.h2
-            className={`max-w-full font-cabin text-5xl font-bold tracking-tight text-darktext md:pt-8 md:text-6xl ${
+            className={`max-w-full font-faustina text-5xl tracking-tight text-darktext md:pt-8 md:text-6xl ${
               textOrientation === "left" ? "text-left" : "text-center"
             }`}
             initial={{ opacity: 0 }}
@@ -146,7 +146,7 @@ export const Header = ({
             )}
             <Link
               to="mailto:kvo.codes@gmail.com"
-              className="inline-flex select-none items-center gap-2 rounded bg-accent px-4 py-2 font-urban  font-semibold text-white shadow-md ring-1 ring-black/[.70] transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none"
+              className="inline-flex select-none items-center gap-2 rounded bg-accent px-4 py-2 font-urban font-semibold text-white shadow-md ring-1 ring-black/[.70] transition-colors hover:bg-transparent hover:text-[#171515] focus:outline-none"
             >
               <button>Get in touch</button>
               <svg

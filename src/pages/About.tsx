@@ -1,17 +1,13 @@
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom"
 import { Footer } from "../components/Footer"
 import { Header } from "../components/Header/Header"
 
 export const About = () => {
   return (
-    <div className="min-h-screen  bg-primary font-normal text-darktext">
+    <div className="min-h-screen bg-primary font-normal text-darktext">
       <div className="mx-auto max-w-4xl pb-20">
-        <Header
-          homepage={true}
-          subtitle="Hey, call me Kev"
-          textOrientation="left"
-          description="Self-taught fullstack software engineer from Canada that specializes in front-end operations. My focus lies in crafting mobile-first responsive websites. I have an affinity for UI/UX design and like to express my creative side through unique designs for my portfolio and projects. Web development has become my creative outlet and it has been a blast to progressively hone my ability to translate my visions to the browser."
-        >
+        <Header homepage={true} subtitle="Hey, call me Kev" textOrientation="left">
           Get to know more{" "}
           <span className="animate-text bg-gradient-to-r  from-teal-500 via-purple-500  to-orange-500  bg-clip-text  text-transparent">
             about me
@@ -26,14 +22,90 @@ export const About = () => {
             transition={{ ease: "easeInOut", duration: 1, delay: 3 }}
             viewport={{ once: true }}
           >
+            <div className="flex flex-col gap-4 sm:flex-row sm:gap-16">
+              <div className="min-w-[8rem] max-w-[8rem] font-faustina text-3xl sm:py-16">
+                Kevin Vo
+              </div>
+
+              <div className="basis-auto space-y-10 pb-16 pt-4 sm:py-16">
+                <div className="flex flex-col gap-1">
+                  <h4 className="font-faustina text-lg">The craft</h4>
+                  <p className="font-inter text-sm leading-8 opacity-[0.85] md:pr-32">
+                    Self-taught fullstack software engineer from Canada that specializes in
+                    front-end operations. My focus lies in crafting mobile-first responsive
+                    websites. Web development has become my creative outlet and it has been a blast
+                    to progressively hone my ability in translating my visions onto the browser.
+                    These days, I've been pursuing higher knowledge on UI/UX design to enhance the
+                    web experience for others. I'm looking for a new place to call home - let's
+                    build something{" "}
+                    {
+                      <Link to="mailto:kvo.codes@gmail.com">
+                        <span className="font-bold underline transition-all">together</span>
+                      </Link>
+                    }
+                    .
+                  </p>
+                </div>
+
+                <div className="flex flex-col gap-1">
+                  <h4 className="font-faustina text-lg">The origins</h4>
+                  <p className="font-inter text-sm leading-8 opacity-[0.85] md:pr-32">
+                    Some time after graduating from York University with an Honours BA. in
+                    Psychology, I realized that path was not for me and transitioned to web
+                    development. Within my first experience of HTML and CSS, I knew this was my
+                    calling after seeing my gibberish of code translate to something visual on the
+                    browser screen. I've been loving the journey ever since.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-4 sm:flex-row sm:gap-16">
+              <div className="min-w-[8rem] max-w-[8rem] font-faustina text-3xl sm:py-16">
+                Values
+              </div>
+              <div className="basis-auto space-y-10 pb-16 pt-4 sm:py-16">
+                <div className="flex flex-col gap-1">
+                  <h4 className="font-faustina text-lg">The objective</h4>
+                  <p className="font-inter text-sm leading-8 opacity-[0.85] md:pr-32">
+                    Each project is unique and should be carefully approached with specialized
+                    solutions in solving these problems. I help trim the unnecessary fat that
+                    plagues the design and development process. The user experience ought to be
+                    seamless and unforgettable. Interfaces don't have to be complex.
+                  </p>
+                </div>
+
+                <div className="flex flex-col gap-1">
+                  <h4 className="font-faustina text-lg">The details</h4>
+                  <p className="font-inter text-sm leading-8 opacity-[0.85] md:pr-32">
+                    It's the finer details that contribute the most to an amazing user experience.
+                    Color theory, typography choice, and the quirky animations are at the forefront
+                    of my design philosophy. The majority of my designs are inspired by simplicity
+                    and minimalism, but I can architect any composition to life.
+                  </p>
+                </div>
+
+                <div className="flex flex-col gap-1">
+                  <h4 className="font-faustina text-lg">The growth</h4>
+                  <p className="font-inter text-sm leading-8 opacity-[0.85] md:pr-32">
+                    Video games have been a large part of my life and I contribute it in part to a
+                    game developer's ability to fully immerse a player into the experience. As much
+                    as players love the atmosphere, the environment, and the interactions within a
+                    game, I hope to replicate that experience for others through an enriching and
+                    powerful web experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className="flex gap-4 sm:gap-16">
-              <div className="min-w-[8rem] max-w-[8rem] py-16 font-cabin text-2xl">
+              <div className="min-w-[8rem] max-w-[8rem] py-16 font-faustina text-3xl">
                 Languages for computers
               </div>
               <div className="basis-auto py-16">
                 <div className="flex flex-wrap gap-10">
                   <div className="flex min-w-[15rem] flex-col gap-4">
-                    <h4 className="font-cabin text-xl">🔥 The Daily</h4>
+                    <h4 className="font-faustina text-lg">🔥 The Daily</h4>
                     <ul className="space-y-2 font-inter text-sm opacity-[0.85]">
                       <li>React</li>
                       <li>Javascript</li>
@@ -43,7 +115,7 @@ export const About = () => {
                     </ul>
                   </div>
                   <div className="flex min-w-[15rem] flex-col gap-4">
-                    <h4 className="font-cabin text-xl">🖥️ I've Built With</h4>
+                    <h4 className="font-faustina text-lg">🖥️ I've Built With</h4>
                     <ul className="space-y-2 font-inter text-sm opacity-[0.85]">
                       <li>Node.js & Express</li>
                       <li>MongoDB & Mongoose</li>
@@ -53,7 +125,7 @@ export const About = () => {
                     </ul>
                   </div>
                   <div className="flex min-w-[15rem] flex-col gap-4">
-                    <h4 className="font-cabin text-xl">👨‍🎓 Learning more</h4>
+                    <h4 className="font-faustina text-lg">👨‍🎓 Learning more</h4>
                     <ul className="space-y-2 font-inter text-sm opacity-[0.85]">
                       <li>Framer Motion</li>
                       <li>Jest</li>
@@ -64,7 +136,7 @@ export const About = () => {
                     </ul>
                   </div>
                   <div className="flex min-w-[15rem] flex-col gap-4">
-                    <h4 className="font-cabin text-xl">📚 Knowledge of</h4>
+                    <h4 className="font-faustina text-lg">📚 Knowledge of</h4>
                     <ul className="space-y-2 font-inter text-sm opacity-[0.85]">
                       <li>Agile Methodology</li>
                       <li>Unit Tests & TDD</li>
@@ -76,21 +148,21 @@ export const About = () => {
             </div>
 
             <div className="flex gap-4 sm:gap-16">
-              <div className="min-w-[8rem] max-w-[8rem] py-16 font-cabin text-2xl">
+              <div className="min-w-[8rem] max-w-[8rem] py-16 font-faustina text-3xl">
                 Languages for humans
               </div>
               <div className="basis-4/5 py-16">
                 <div className="flex flex-wrap gap-10">
                   <div className="flex min-w-[10rem] flex-col gap-4">
-                    <h4 className="font-cabin text-xl">🇨🇦 English</h4>
+                    <h4 className="font-faustina text-lg">🇨🇦 English</h4>
                     <p className="font-inter text-sm opacity-[0.85]">Native</p>
                   </div>
                   <div className="flex min-w-[10rem] flex-col gap-4">
-                    <h4 className="font-cabin text-xl">🇻🇳 Vietnamese</h4>
+                    <h4 className="font-faustina text-lg">🇻🇳 Vietnamese</h4>
                     <p className="font-inter text-sm opacity-[0.85]">Limited</p>
                   </div>
                   <div className="flex min-w-[10rem] flex-col gap-4">
-                    <h4 className="font-cabin text-xl">🇰🇷 Korean</h4>
+                    <h4 className="font-faustina text-lg">🇰🇷 Korean</h4>
                     <p className="font-inter text-sm opacity-[0.85]">Limited</p>
                   </div>
                 </div>
@@ -98,20 +170,22 @@ export const About = () => {
             </div>
 
             <div className="flex gap-4 sm:gap-16">
-              <div className="min-w-[8rem] max-w-[8rem] py-16 font-cabin text-2xl">Interests</div>
+              <div className="min-w-[8rem] max-w-[8rem] py-16 font-faustina text-3xl">
+                Interests
+              </div>
               <div className="basis-4/5 py-16">
                 <div className="flex flex-wrap gap-10">
                   <div className="flex min-w-[15rem] flex-col gap-4">
-                    <h4 className="font-cabin text-xl">🕹️ Video Games</h4>
+                    <h4 className="font-faustina text-lg">🕹️ Video Games</h4>
                     <ul className="space-y-2 font-inter text-sm opacity-[0.85]">
                       <li>Lost Ark</li>
-                      <li>Diablo IV</li>
                       <li>League of Legends</li>
                       <li>Yugioh MD</li>
+                      <li>Diablo IV</li>
                     </ul>
                   </div>
                   <div className="flex min-w-[15rem] flex-col gap-4">
-                    <h4 className="font-cabin text-xl">👍 Spare Time</h4>
+                    <h4 className="font-faustina text-lg">👍 Spare Time</h4>
                     <ul className="space-y-2 font-inter text-sm opacity-[0.85]">
                       <li>Taking walks</li>
                       <li>Calisthenics</li>

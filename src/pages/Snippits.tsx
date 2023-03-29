@@ -1,7 +1,6 @@
 import { Footer } from "../components/Footer"
 import { Header } from "../components/Header/Header"
 import { PromotionLink } from "../components/CaseStudy/PromotionLink"
-import { motion } from "framer-motion"
 import { CaseHeading } from "../components/CaseStudy/CaseHeading"
 import { CaseParagraph } from "../components/CaseStudy/CaseParagraph"
 import { CaseStudyContainer } from "../components/CaseStudy/CaseStudyContainer"
@@ -28,7 +27,7 @@ export const Snippits = () => {
         <CaseStudyContainer>
           <CaseHeading index="01">Product Conception</CaseHeading>
           <CaseTextContainer>
-            <CaseParagraph title="The Motive">
+            <CaseParagraph>
               I was forgetting a lot of basic code syntax while learning how to program as do many
               other coders. This web application is meant to serve as a mini cheatsheet filled with
               code excerpts and other tips and tricks I've found over the course of teaching myself
@@ -40,7 +39,7 @@ export const Snippits = () => {
         <CaseStudyContainer>
           <CaseHeading index="02">Colors</CaseHeading>
 
-          <CaseParagraph title="Main Colors">
+          <CaseParagraph>
             <ColorsContainer>
               <div className="grid">
                 <div className={`col-start-1 row-start-1 h-36 w-24 bg-[#F1EFE9] sm:w-36`}></div>
@@ -67,7 +66,7 @@ export const Snippits = () => {
         <CaseStudyContainer>
           <CaseHeading index="03">Challenges</CaseHeading>
           <CaseTextContainer>
-            <CaseParagraph title="Design Format">
+            <CaseParagraph>
               Between in-depth articles, blog posts, or a grid of random snippets, it was rather
               challenging trying to figure out which format I wanted the website to use. The idea of
               code snippets was for it to be easily accessible and fast to look up on a whim. "
@@ -82,7 +81,7 @@ export const Snippits = () => {
         <CaseStudyContainer>
           <CaseHeading index="04">Areas of improvement</CaseHeading>
           <CaseTextContainer>
-            <CaseParagraph title="User-generated Content">
+            <CaseParagraph>
               Snippits can be expanded to allow users from across the world to enter in their own
               code snippets into a database and have it displayed on the website. There would have
               to a way to filter between code snippets that actually help people or useless
