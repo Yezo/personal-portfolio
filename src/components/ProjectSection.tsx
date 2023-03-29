@@ -50,6 +50,7 @@ export const ProjectSection = ({
           <div className="buttons flex flex-wrap gap-4">
             <Link
               to={demoLink}
+              target="_blank"
               className="inline-flex select-none items-center gap-2 rounded bg-transparent px-4 py-2 font-urban font-semibold text-darktext shadow-md ring-1 ring-black/[.70] transition-colors hover:bg-accent hover:text-primary focus:outline-none"
             >
               <button>Visit</button>

@@ -1,6 +1,6 @@
 import { motion as m } from "framer-motion"
-import { Footer } from "../components/Footer"
 import { Header } from "../components/Header/Header"
+import { Footer } from "../components/Footer/Footer"
 import { ProjectSection } from "../components/ProjectSection"
 import { getArkokoStack, getAnifluxStack, getSnippitsStack } from "../helpers/GetStack"
 
@@ -78,7 +78,7 @@ export const HomePage = () => {
           </section>
         </main>
       </div>
-      <Footer />
+      <Footer url="mailto:kvo.codes@gmail.com" title="kvo.codes@gmail.com" />
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
-import { Footer } from "../components/Footer"
+import { Footer } from "../components/Footer/Footer"
 import { Header } from "../components/Header/Header"
 
 export const About = () => {
@@ -199,7 +199,7 @@ export const About = () => {
           </motion.section>
         </main>
       </div>
-      <Footer />
+      <Footer url="mailto:kvo.codes@gmail.com" title="kvo.codes@gmail.com" />
     </div>
   )
 }

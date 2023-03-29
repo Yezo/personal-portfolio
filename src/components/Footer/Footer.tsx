@@ -2,8 +2,9 @@ import { Link, useNavigate, useLocation } from "react-router-dom"
 
 type Props = {
   url: string
+  title: string
 }
-export default function NewFooter({ url }: Props) {
+export const Footer = ({ url, title }: Props) => {
   const navigate = useNavigate()
   const location = useLocation()
   function handleRefreshHomePage() {
@@ -14,9 +15,9 @@ export default function NewFooter({ url }: Props) {
       <div className="min-w-screen grid min-h-[20rem] place-items-center bg-text font-faustina text-2xl text-primary">
         <Link
           to={url}
-          className="inline-flex select-none items-center gap-4 rounded-full bg-transparent px-8 py-4 font-faustina text-darktext opacity-90 shadow-md ring-2 ring-black/[.70] transition-colors hover:bg-darktext hover:text-primary focus:outline-none"
+          className="inline-flex select-none items-center gap-4 rounded-full bg-transparent px-8 py-4 font-faustina  text-white opacity-90 shadow-md ring-2 ring-white/[.70] transition-colors hover:bg-darktext hover:text-primary hover:ring-black focus:outline-none"
         >
-          <button className="">{url}</button>
+          <button className="">{title}</button>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

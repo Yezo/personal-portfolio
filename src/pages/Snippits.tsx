@@ -1,11 +1,10 @@
-import { Footer } from "../components/Footer"
 import { Header } from "../components/Header/Header"
-import { PromotionLink } from "../components/CaseStudy/PromotionLink"
 import { CaseHeading } from "../components/CaseStudy/CaseHeading"
 import { CaseParagraph } from "../components/CaseStudy/CaseParagraph"
 import { CaseStudyContainer } from "../components/CaseStudy/CaseStudyContainer"
 import { CaseTextContainer } from "../components/CaseStudy/CaseTextContainer"
 import { ColorsContainer } from "../components/CaseStudy/ColorsContainer"
+import { Footer } from "../components/Footer/Footer"
 
 export const Snippits = () => {
   return (
@@ -90,11 +89,9 @@ export const Snippits = () => {
             </CaseParagraph>
           </CaseTextContainer>
         </CaseStudyContainer>
-
-        <PromotionLink URL="https://snippits.vercel.app" />
       </main>
 
-      <Footer />
+      <Footer url="https://snippits.vercel.app" title="visit snippits" />
     </div>
   )
 }

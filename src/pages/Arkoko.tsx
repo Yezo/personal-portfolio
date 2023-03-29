@@ -1,6 +1,5 @@
-import { Footer } from "../components/Footer"
+import { Footer } from "../components/Footer/Footer"
 import { Header } from "../components/Header/Header"
-import { PromotionLink } from "../components/CaseStudy/PromotionLink"
 import { CaseHeading } from "../components/CaseStudy/CaseHeading"
 import { CaseParagraph } from "../components/CaseStudy/CaseParagraph"
 import { CaseStudyContainer } from "../components/CaseStudy/CaseStudyContainer"
@@ -119,11 +118,9 @@ export const Arkoko = () => {
             </CaseParagraph>
           </CaseTextContainer>
         </CaseStudyContainer>
-
-        <PromotionLink URL="https://arkoko.vercel.app" />
       </main>
 
-      <Footer />
+      <Footer url="https://arkoko.vercel.app/" title="visit arkoko" />
     </div>
   )
 }
