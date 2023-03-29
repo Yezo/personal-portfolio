@@ -1,3 +1,4 @@
+import { motion as m } from "framer-motion"
 import { Link, useNavigate, useLocation } from "react-router-dom"
 import { FooterLink } from "./FooterLink"
 import { FooterVisitLink } from "./FooterVisitLink"
@@ -19,9 +20,15 @@ export const Footer = ({ url, title }: Props) => {
       <div className="flex min-h-screen">
         <section className="grid basis-1/2 place-items-center bg-accent">
           <Link to="/" onClick={handleRefreshHomePage}>
-            <h2 className="font-faustina text-6xl font-bold text-primary transition-all hover:text-[4rem] ">
+            <m.h2
+              className="font-faustina text-6xl font-bold text-primary transition-all hover:text-[4rem]"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ ease: "easeInOut", duration: 1, delay: 0.5 }}
+              viewport={{ once: true }}
+            >
               kv.
-            </h2>
+            </m.h2>
           </Link>
         </section>
         <section className="grid basis-1/2 place-items-center bg-primary font-faustina text-3xl tracking-normal text-accent">
