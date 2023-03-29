@@ -23,7 +23,7 @@ export const About = () => {
             viewport={{ once: true }}
           >
             <div className="flex flex-col gap-4 sm:flex-row sm:gap-16">
-              <div className="min-w-[8rem] max-w-[8rem] font-faustina text-3xl sm:py-16">
+              <div className="min-w-[8rem] max-w-[8rem] pt-16 font-faustina text-3xl sm:py-16">
                 Kevin Vo
               </div>
 
@@ -61,7 +61,7 @@ export const About = () => {
             </div>
 
             <div className="flex flex-col gap-4 sm:flex-row sm:gap-16">
-              <div className="min-w-[8rem] max-w-[8rem] font-faustina text-3xl sm:py-16">
+              <div className="min-w-[8rem] max-w-[8rem] pt-16 font-faustina text-3xl sm:py-16">
                 Values
               </div>
               <div className="basis-auto space-y-10 pb-16 pt-4 sm:py-16">
