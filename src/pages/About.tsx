@@ -22,7 +22,7 @@ export const About = () => {
             transition={{ ease: "easeInOut", duration: 1, delay: 3 }}
             viewport={{ once: true }}
           >
-            <div className="flex flex-col gap-4 sm:flex-row sm:gap-16">
+            <div className="flex flex-col gap-4 sm:flex-row sm:gap-40">
               <div className="min-w-[8rem] max-w-[8rem] pt-16 font-faustina text-3xl sm:py-16">
                 Kevin Vo
               </div>
@@ -30,7 +30,7 @@ export const About = () => {
               <div className="basis-auto space-y-10 pb-16 pt-4 sm:py-16">
                 <div className="flex flex-col gap-1">
                   <h4 className="font-faustina text-lg">The craft</h4>
-                  <p className="font-inter text-sm leading-8 opacity-[0.85] md:pr-32">
+                  <p className="font-inter text-sm leading-8 opacity-[0.85]">
                     Self-taught fullstack software engineer from Canada that specializes in
                     front-end operations. My focus lies in crafting mobile-first responsive
                     websites. Web development has become my creative outlet and it has been a blast
@@ -49,7 +49,7 @@ export const About = () => {
 
                 <div className="flex flex-col gap-1">
                   <h4 className="font-faustina text-lg">The origins</h4>
-                  <p className="font-inter text-sm leading-8 opacity-[0.85] md:pr-32">
+                  <p className="font-inter text-sm leading-8 opacity-[0.85]">
                     Some time after graduating from York University with an Honours BA. in
                     Psychology, I realized that path was not for me and transitioned to web
                     development. Within my first experience of HTML and CSS, I knew this was my
@@ -60,14 +60,14 @@ export const About = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-4 sm:flex-row sm:gap-16">
+            <div className="flex flex-col gap-4 sm:flex-row sm:gap-40">
               <div className="min-w-[8rem] max-w-[8rem] pt-16 font-faustina text-3xl sm:py-16">
                 Values
               </div>
               <div className="basis-auto space-y-10 pb-16 pt-4 sm:py-16">
                 <div className="flex flex-col gap-1">
                   <h4 className="font-faustina text-lg">The objective</h4>
-                  <p className="font-inter text-sm leading-8 opacity-[0.85] md:pr-32">
+                  <p className="font-inter text-sm leading-8 opacity-[0.85]">
                     Each project is unique and should be carefully approached with specialized
                     solutions in solving these problems. I help trim the unnecessary fat that
                     plagues the design and development process. The user experience ought to be
@@ -77,7 +77,7 @@ export const About = () => {
 
                 <div className="flex flex-col gap-1">
                   <h4 className="font-faustina text-lg">The details</h4>
-                  <p className="font-inter text-sm leading-8 opacity-[0.85] md:pr-32">
+                  <p className="font-inter text-sm leading-8 opacity-[0.85]">
                     It's the finer details that contribute the most to an amazing user experience.
                     Color theory, typography choice, and the quirky animations are at the forefront
                     of my design philosophy. The majority of my designs are inspired by simplicity
@@ -87,7 +87,7 @@ export const About = () => {
 
                 <div className="flex flex-col gap-1">
                   <h4 className="font-faustina text-lg">The growth</h4>
-                  <p className="font-inter text-sm leading-8 opacity-[0.85] md:pr-32">
+                  <p className="font-inter text-sm leading-8 opacity-[0.85]">
                     Video games have been a large part of my life and I contribute it in part to a
                     game developer's ability to fully immerse a player into the experience. As much
                     as players love the atmosphere, the environment, and the interactions within a
@@ -98,7 +98,7 @@ export const About = () => {
               </div>
             </div>
 
-            <div className="flex gap-4 sm:gap-16">
+            <div className="flex gap-8 sm:gap-40">
               <div className="min-w-[8rem] max-w-[8rem] py-16 font-faustina text-3xl">
                 Languages for computers
               </div>
@@ -147,7 +147,7 @@ export const About = () => {
               </div>
             </div>
 
-            <div className="flex gap-4 sm:gap-16">
+            <div className="flex gap-8 sm:gap-40">
               <div className="min-w-[8rem] max-w-[8rem] py-16 font-faustina text-3xl">
                 Languages for humans
               </div>
@@ -169,7 +169,7 @@ export const About = () => {
               </div>
             </div>
 
-            <div className="flex gap-4 sm:gap-16">
+            <div className="flex gap-8 sm:gap-40">
               <div className="min-w-[8rem] max-w-[8rem] py-16 font-faustina text-3xl">
                 Interests
               </div>
