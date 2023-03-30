@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
-import { motion } from "framer-motion"
+import { motion as m } from "framer-motion"
+import { Button } from "./Button"
 
 type Props = {
   title: string
@@ -19,7 +20,7 @@ export const ProjectSection = ({
   getStack,
 }: Props) => {
   return (
-    <motion.article
+    <m.article
       className="flex flex-col items-center justify-center gap-8 px-8 py-20 sm:flex-row sm:items-center sm:gap-20 sm:px-16"
       initial={{ opacity: 0, x: -75 }}
       whileInView={{ opacity: 1, x: 0 }}
@@ -29,7 +30,7 @@ export const ProjectSection = ({
       <a href={demoLink} target="_blank" rel="noreferrer">
         <img
           src={imageLink}
-          className="max-h-[420px] max-w-[325px] flex-1 rounded-[3.5rem] object-cover shadow-md"
+          className="max-h-[420px] max-w-[325px] flex-1 rounded object-cover shadow-md"
           alt={title}
         ></img>
       </a>
@@ -47,7 +48,15 @@ export const ProjectSection = ({
         </div>
         <div className="flex flex-col gap-8">
           <p className="pt-6 font-inter text-sm leading-[2] opacity-80">{description}</p>
-          <div className="buttons flex flex-wrap gap-4">
+          <div className="flex gap-3">
+            <Button variant="secondary" url={demoLink}>
+              Visit
+            </Button>
+            <Button variant="primary" url={caseStudyLink}>
+              View Case Study
+            </Button>
+          </div>
+          {/* <div className="buttons flex flex-wrap gap-4">
             <Link
               to={demoLink}
               target="_blank"
@@ -84,9 +93,9 @@ export const ProjectSection = ({
                 />
               </svg>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
-    </motion.article>
+    </m.article>
   )
 }

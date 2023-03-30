@@ -1,28 +1,35 @@
-import { Header } from "../components/Header/Header"
 import { CaseHeading } from "../components/CaseStudy/CaseHeading"
 import { CaseParagraph } from "../components/CaseStudy/CaseParagraph"
 import { CaseStudyContainer } from "../components/CaseStudy/CaseStudyContainer"
 import { CaseTextContainer } from "../components/CaseStudy/CaseTextContainer"
 import { ColorsContainer } from "../components/CaseStudy/ColorsContainer"
 import { Footer } from "../components/Footer/Footer"
+import { HeaderContainer } from "../components/NewHeader/HeaderContainer"
+import { HeaderImage } from "../components/NewHeader/HeaderImage"
+import { HeaderNav } from "../components/NewHeader/HeaderNav"
+import { HeaderScrollIndicator } from "../components/NewHeader/HeaderScrollIndicator"
+import { HeaderTitle } from "../components/NewHeader/HeaderTitle"
 
 export const Snippits = () => {
   return (
-    <div className="min-h-screen  bg-primary font-normal text-darktext">
-      <Header
-        subtitle="Snippits (2023)"
-        textOrientation="center"
-        imageURL="/snippits.webp"
-        imageTitle="Snippits"
-      >
-        Unforgettable{" "}
-        <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
-          code snippets
-        </span>{" "}
-        for coders with forgettable minds
-      </Header>
+    <div className="bg-gray">
+      <HeaderContainer>
+        <div>
+          <HeaderNav />
+          <HeaderTitle subtitle="Snippits (2023)" orientation="center">
+            Unforgettable{" "}
+            <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
+              code snippets
+            </span>{" "}
+            for coders with forgettable minds
+          </HeaderTitle>
+          <HeaderImage title="snippits" url="/snippits.webp" />
+        </div>
 
-      <main>
+        <HeaderScrollIndicator></HeaderScrollIndicator>
+      </HeaderContainer>
+
+      <main className="mx-auto max-w-4xl bg-gray pt-20 pb-20">
         <CaseStudyContainer>
           <CaseHeading index="01">Product Conception</CaseHeading>
           <CaseTextContainer>
@@ -90,8 +97,7 @@ export const Snippits = () => {
           </CaseTextContainer>
         </CaseStudyContainer>
       </main>
-
-      <Footer url="https://snippits.vercel.app" title="visit snippits" />
+      <Footer url="https://snippits.vercel.app" title="Check out Snippits" />
     </div>
   )
 }

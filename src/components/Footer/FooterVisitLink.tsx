@@ -17,6 +17,7 @@ export const FooterVisitLink = ({ url, title }: Props) => {
         <Link
           to={url}
           className="inline-flex select-none items-center gap-4 rounded-full bg-transparent px-8 py-4 font-faustina  text-white opacity-90 shadow-md ring-2 ring-white/[.70] transition-colors hover:bg-darktext hover:text-primary hover:ring-black focus:outline-none"
+          target="_blank"
         >
           <p>{title}</p>
           <svg

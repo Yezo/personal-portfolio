@@ -1,28 +1,35 @@
 import { Footer } from "../components/Footer/Footer"
-import { Header } from "../components/Header/Header"
 import { CaseHeading } from "../components/CaseStudy/CaseHeading"
 import { CaseParagraph } from "../components/CaseStudy/CaseParagraph"
 import { CaseStudyContainer } from "../components/CaseStudy/CaseStudyContainer"
 import { CaseTextContainer } from "../components/CaseStudy/CaseTextContainer"
 import { ColorsContainer } from "../components/CaseStudy/ColorsContainer"
+import { HeaderContainer } from "../components/NewHeader/HeaderContainer"
+import { HeaderImage } from "../components/NewHeader/HeaderImage"
+import { HeaderNav } from "../components/NewHeader/HeaderNav"
+import { HeaderScrollIndicator } from "../components/NewHeader/HeaderScrollIndicator"
+import { HeaderTitle } from "../components/NewHeader/HeaderTitle"
 
 export const AniFlux = () => {
   return (
-    <div className="min-h-screen bg-primary font-normal text-darktext">
-      <Header
-        subtitle="AniFlux (2023)"
-        textOrientation="center"
-        imageURL="/aniflux.webp"
-        imageTitle="AniFlux"
-      >
-        A sleek and modern design for the{" "}
-        <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
-          new age
-        </span>{" "}
-        of anime
-      </Header>
+    <div className="bg-gray">
+      <HeaderContainer>
+        <div>
+          <HeaderNav />
+          <HeaderTitle subtitle="Aniflux (2023)" orientation="center">
+            A sleek and modern design for the{" "}
+            <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
+              new age
+            </span>{" "}
+            of anime
+          </HeaderTitle>
+          <HeaderImage title="aniflux" url="/aniflux.webp" />
+        </div>
 
-      <main>
+        <HeaderScrollIndicator></HeaderScrollIndicator>
+      </HeaderContainer>
+
+      <main className="mx-auto max-w-4xl bg-gray pt-20 pb-20">
         <CaseStudyContainer>
           <CaseHeading index="01">Product Conception</CaseHeading>
           <CaseTextContainer>
@@ -98,8 +105,7 @@ export const AniFlux = () => {
           </CaseTextContainer>
         </CaseStudyContainer>
       </main>
-
-      <Footer url="https://aniflux.onrender.com" title="visit aniflux" />
+      <Footer url="https://aniflux.onrender.com/" title="Check out Aniflux" />
     </div>
   )
 }
