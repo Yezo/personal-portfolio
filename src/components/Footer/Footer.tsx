@@ -17,7 +17,7 @@ export const Footer = ({ url, title }: Props) => {
     <footer className="min-w-screen">
       <FooterVisitLink url={url} title={title} />
 
-      <div className="flex min-h-screen">
+      <div className="flex min-h-[30rem] sm:min-h-screen">
         <section className="grid basis-1/2 place-items-center bg-accent">
           <Link to="/" onClick={handleRefreshHomePage}>
             <m.h2
