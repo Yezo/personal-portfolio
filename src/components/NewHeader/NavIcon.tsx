@@ -1,20 +1,24 @@
-import * as Tooltip from "@radix-ui/react-tooltip";
-import { Link } from "react-router-dom";
+import * as Tooltip from "@radix-ui/react-tooltip"
+import { Link } from "react-router-dom"
 
 type Props = {
-  tooltipText: string;
-  url: string;
-  children?: React.ReactNode;
-};
+  tooltipText: string
+  url?: string
+  children?: React.ReactNode
+}
 
 export const NavIcon = ({ tooltipText, url, children }: Props) => {
   return (
     <Tooltip.Provider delayDuration={200}>
       <Tooltip.Root>
         <Tooltip.Trigger asChild>
-          <Link to={url} target="_blank" className="hover:text-accent">
-            {children}
-          </Link>
+          {url ? (
+            <Link to={url} target="_blank" className="hover:text-accent">
+              {children}
+            </Link>
+          ) : (
+            <p> {children}</p>
+          )}
         </Tooltip.Trigger>
         <Tooltip.Portal>
           <Tooltip.Content
@@ -28,5 +32,5 @@ export const NavIcon = ({ tooltipText, url, children }: Props) => {
         </Tooltip.Portal>
       </Tooltip.Root>
     </Tooltip.Provider>
-  );
-};
+  )
+}
