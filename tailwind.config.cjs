@@ -6,16 +6,13 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ['"Inter", sans-serif;'],
-        heading: ['"Gloock", serif;'],
-        cabin: ['"Cabin", sans-serif;'],
         urban: ['"Urbanist", sans-serif;'],
-        forum: ['"Koh Santepheap", cursive;'],
         faustina: ['"Faustina", serif;'],
       },
       colors: {
         primary: "#F5F5F5",
         accent: "#415C4F",
-        darktext: "#191919",
+        darktext: "#2d2d2d",
         gray: "#EDF1F5",
         text: "#7B8EA1",
         arkokoColorOne: "#15181D",
@@ -55,6 +52,22 @@ module.exports = {
             "background-position": "right center",
           },
         },
+        test: {
+          from: {
+            transform: "translateX(-52%)",
+          },
+          to: {
+            transform: "translateX(0%)",
+          },
+        },
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marquee2: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
       },
       animation: {
         slideDownAndFade: "slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)",
@@ -62,6 +75,9 @@ module.exports = {
         slideUpAndFade: "slideUpAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)",
         slideRightAndFade: "slideRightAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)",
         text: "text 5s ease infinite",
+        test: "25s ease-in-out infinite alternate",
+        marquee: "marquee 30s linear infinite",
+        marquee2: "marquee2 20s linear infinite",
       },
     },
   },
