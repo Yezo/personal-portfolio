@@ -74,7 +74,7 @@ export const HomePage = () => {
       </HeaderContainer>
 
       <motion.section
-        className="min-w-screen my-10 hidden h-[32rem] grid-cols-7 gap-[1px] bg-gray font-faustina text-3xl text-gray md:grid"
+        className="min-w-screen hidden h-[32rem] grid-cols-7 gap-[1px] bg-gray font-faustina text-3xl text-gray md:grid"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ staggerChildren: 1 }}
