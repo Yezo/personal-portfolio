@@ -28,13 +28,16 @@ export const HomePage = () => {
                 viewBox="0 0 800 400"
                 className="absolute top-5 right-0 md:top-7 md:right-0"
               >
-                <path
+                <m.path
                   d="M20.179365158081055,180.26904296875C78.17637221018472,183.8564885457357,271.0014721552531,198.65470123291016,368.1614074707031,201.79371643066406C465.32134278615314,204.93273162841797,535.1270192464193,201.34528605143228,603.1389770507812,199.10313415527344C671.1509348551432,196.8609822591146,747.3841247558594,190.13452657063803,776.233154296875,188.34080505371094"
                   fill="none"
                   strokeWidth="9"
                   stroke="#2e2e2e"
                   strokeLinecap="round"
-                ></path>
+                  initial={{ pathLength: 0 }}
+                  animate={{ pathLength: 1 }}
+                  transition={{ duration: 1.4, delay: 2 }}
+                ></m.path>
                 <defs>
                   <linearGradient
                     id="SvgjsLinearGradient1004"
