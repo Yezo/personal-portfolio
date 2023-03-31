@@ -1,4 +1,4 @@
-import { motion as m } from "framer-motion"
+import { motion as m, motion, stagger } from "framer-motion"
 import { Footer } from "../components/Footer/Footer"
 import { ProjectSection } from "../components/ProjectSection"
 import { getArkokoStack, getAnifluxStack, getSnippitsStack } from "../helpers/GetStack"
@@ -8,6 +8,8 @@ import { HeaderTitle } from "../components/NewHeader/HeaderTitle"
 import { HeaderDescription } from "../components/NewHeader/HeaderDescription"
 import { Button } from "../components/Button"
 import { HeaderScrollIndicator } from "../components/NewHeader/HeaderScrollIndicator"
+import { SKILLS } from "../components/Skillset/Data"
+import { NavIcon } from "../components/NewHeader/NavIcon"
 
 export const HomePage = () => {
   return (
@@ -18,8 +20,31 @@ export const HomePage = () => {
           <HeaderTitle subtitle="Hey, call me Kev" orientation="left">
             Software engineer at work - {<br />}
             digital{" "}
-            <span className="animate-text bg-gradient-to-r  from-teal-500 via-purple-500  to-orange-500  bg-clip-text  text-transparent">
+            <span className="relative animate-text  bg-gradient-to-r from-teal-500  via-purple-500  to-orange-500  bg-clip-text text-transparent">
               designer
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                viewBox="0 0 800 400"
+                className="absolute top-5 right-0 md:top-7 md:right-0"
+              >
+                <path
+                  d="M20.179365158081055,180.26904296875C78.17637221018472,183.8564885457357,271.0014721552531,198.65470123291016,368.1614074707031,201.79371643066406C465.32134278615314,204.93273162841797,535.1270192464193,201.34528605143228,603.1389770507812,199.10313415527344C671.1509348551432,196.8609822591146,747.3841247558594,190.13452657063803,776.233154296875,188.34080505371094"
+                  fill="none"
+                  strokeWidth="9"
+                  stroke="#2e2e2e"
+                  strokeLinecap="round"
+                ></path>
+                <defs>
+                  <linearGradient
+                    id="SvgjsLinearGradient1004"
+                    gradientTransform="rotate(0, 0.5, 0.5)"
+                  >
+                    <stop stopColor="hsl(37, 99%, 67%)" offset="0"></stop>
+                    <stop stopColor="hsl(316, 73%, 52%)" offset="1"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
             </span>{" "}
             at heart.
           </HeaderTitle>
@@ -47,6 +72,31 @@ export const HomePage = () => {
 
         <HeaderScrollIndicator></HeaderScrollIndicator>
       </HeaderContainer>
+
+      <motion.section
+        className="min-w-screen my-10 hidden h-[32rem] grid-cols-7 gap-[1px] bg-gray font-faustina text-3xl text-gray md:grid"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ staggerChildren: 1 }}
+        viewport={{ once: true }}
+      >
+        <div className="col-span-2 grid place-items-center bg-black text-3xl tracking-wide">
+          The skills.
+        </div>
+        {SKILLS.map((item) => (
+          <div
+            key={item.name}
+            className="hover:bg- flex items-center justify-center gap-3 bg-black px-8 py-4 transition-colors"
+          >
+            <NavIcon tooltipText={item.name}>
+              <img src={item.icon} className="h-14 w-14 rounded "></img>
+            </NavIcon>
+          </div>
+        ))}
+        <div className="col-span-2 grid place-items-center  bg-black text-3xl tracking-wide">
+          The craft.
+        </div>
+      </motion.section>
 
       <main className="mx-auto max-w-4xl bg-gray pt-20 pb-20">
         <section className="divide-y divide-stone-300" id="projects">
