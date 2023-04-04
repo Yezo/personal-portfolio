@@ -19,7 +19,7 @@ export const About = () => {
               about me
             </span>{" "}
           </HeaderTitle>
-          <HeaderImage title="aniflux" url="/aniflux.webp" />
+          <HeaderImage title="aniflux" url="/flower.webp" />
         </div>
 
         <HeaderScrollIndicator></HeaderScrollIndicator>
