@@ -20,7 +20,6 @@ export const Button = ({ variant, children, url }: Props) => {
       }
       
       `}
-      target={`${variant === "primary" ? "" : "_blank"}`}
     >
       <button>{children}</button>
       {variant === "secondary" && <SecondarySVG />}
