@@ -62,9 +62,9 @@ export const About = () => {
                 <p className="font-inter text-sm leading-8 opacity-[0.85]">
                   Some time after graduating from York University with an Honours BA. in Psychology,
                   I realized that path was not for me and transitioned to web development. Within my
-                  first experience of HTML and CSS, I knew this was my calling after seeing my
-                  gibberish of code translate to something visual on the browser screen. I've been
-                  loving the journey ever since.
+                  first experience of playing with HTML and CSS, I knew this was my calling after
+                  seeing the gibberish of code I had just written translate into something visual on
+                  my browser screen. I've been loving the journey ever since.
                 </p>
               </div>
             </div>
@@ -139,11 +139,11 @@ export const About = () => {
                 <div className="flex min-w-[15rem] flex-col gap-4">
                   <h4 className="font-faustina text-lg">🖥️ I've Built With</h4>
                   <ul className="space-y-2 font-inter text-sm opacity-[0.85]">
-                    <li>Node.js & Express</li>
-                    <li>MongoDB & Mongoose</li>
-                    <li>Bootstrap & MaterialUI</li>
-                    <li>HeadlessUI & RadixUI</li>
-                    <li>SASS</li>
+                    <li>Redux Toolkit + RTK Query</li>
+                    <li>Node.js + Express</li>
+                    <li>MongoDB + Mongoose</li>
+                    <li>Bootstrap + MaterialUI</li>
+                    <li>HeadlessUI + RadixUI</li>
                   </ul>
                 </div>
                 <div className="flex min-w-[15rem] flex-col gap-4">
@@ -153,7 +153,6 @@ export const About = () => {
                     <li>Jest</li>
                     <li>Figma</li>
                     <li>SQL</li>
-                    <li>Redux</li>
                     <li>Storybook</li>
                   </ul>
                 </div>
@@ -161,8 +160,8 @@ export const About = () => {
                   <h4 className="font-faustina text-lg">📚 Knowledge of</h4>
                   <ul className="space-y-2 font-inter text-sm opacity-[0.85]">
                     <li>Agile Methodology</li>
-                    <li>Unit Tests & TDD</li>
-                    <li>Docker & Containers</li>
+                    <li>Unit Tests + TDD</li>
+                    <li>Docker + Containers</li>
                   </ul>
                 </div>
               </div>
@@ -230,7 +229,7 @@ export const About = () => {
           </m.div>
         </section>
       </main>
-      <Footer url="https://aniflux.onrender.com/" title="Check out Aniflux" />
+      <Footer url="mailto:kvo.codes@gmail.com" title="kvo.codes@gmail.com" />
     </div>
   )
 }
