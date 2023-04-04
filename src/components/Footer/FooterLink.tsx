@@ -18,6 +18,7 @@ export const FooterLink = ({ url, children }: Props) => {
       <Link
         to={url}
         className="hover:animate-text hover:bg-gradient-to-r  hover:from-teal-500 hover:via-purple-500 hover:to-orange-500  hover:bg-clip-text  hover:text-transparent"
+        target="_blank"
       >
         {children}
       </Link>

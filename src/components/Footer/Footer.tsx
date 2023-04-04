@@ -21,7 +21,7 @@ export const Footer = ({ url, title }: Props) => {
         <section className="grid basis-1/2 place-items-center bg-accent">
           <Link to="/" onClick={handleRefreshHomePage}>
             <m.h2
-              className="font-faustina text-6xl font-bold text-primary transition-all hover:text-[4rem]"
+              className="font-faustina text-6xl font-bold text-primary"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ ease: "easeInOut", duration: 1, delay: 0.5 }}

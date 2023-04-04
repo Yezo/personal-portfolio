@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { motion as m } from "framer-motion"
-import { Button } from "./Button"
+import { Button } from "./Buttons/Button"
+import { VisitButton } from "./Buttons/VisitButton"
 
 type Props = {
   title: string
@@ -49,12 +50,8 @@ export const ProjectSection = ({
         <div className="flex flex-col gap-8">
           <p className="pt-6 font-inter text-sm leading-[2] opacity-80">{description}</p>
           <div className="flex gap-3">
-            <Button variant="secondary" url={demoLink}>
-              Visit
-            </Button>
-            <Button variant="primary" url={caseStudyLink}>
-              View Case Study
-            </Button>
+            <VisitButton url={demoLink}>Visit</VisitButton>
+            <Button url={caseStudyLink}>View Case Study</Button>
           </div>
           {/* <div className="buttons flex flex-wrap gap-4">
             <Link

@@ -1,4 +1,4 @@
-import { motion as m, motion, stagger } from "framer-motion"
+import { motion as m, motion } from "framer-motion"
 import { Footer } from "../components/Footer/Footer"
 import { ProjectSection } from "../components/ProjectSection"
 import { getArkokoStack, getAnifluxStack, getSnippitsStack } from "../helpers/GetStack"
@@ -6,10 +6,11 @@ import { HeaderContainer } from "../components/NewHeader/HeaderContainer"
 import { HeaderNav } from "../components/NewHeader/HeaderNav"
 import { HeaderTitle } from "../components/NewHeader/HeaderTitle"
 import { HeaderDescription } from "../components/NewHeader/HeaderDescription"
-import { Button } from "../components/Button"
+import { Button } from "../components/Buttons/Button"
 import { HeaderScrollIndicator } from "../components/NewHeader/HeaderScrollIndicator"
 import { SKILLS } from "../components/Skillset/Data"
 import { NavIcon } from "../components/NewHeader/NavIcon"
+import { LocalButton } from "../components/Buttons/LocalButton"
 
 export const HomePage = () => {
   return (
@@ -64,12 +65,8 @@ export const HomePage = () => {
             transition={{ ease: "easeInOut", duration: 0.85, delay: 2.5 }}
             viewport={{ once: true }}
           >
-            <Button variant="secondary" url="/about">
-              Learn more
-            </Button>
-            <Button variant="primary" url="mailto:kvo.codes@gmail.com">
-              Get in touch
-            </Button>
+            <LocalButton url="/about">Learn more</LocalButton>
+            <Button url="mailto:kvo.codes@gmail.com">Get in touch</Button>
           </m.div>
         </div>
 
