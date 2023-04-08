@@ -83,7 +83,7 @@ export const HomePage = () => {
         <div className="col-span-2 grid place-items-center bg-black text-3xl tracking-wide">
           The skills.
         </div>
-        {SKILLS.map((item) => (
+        {SKILLS.slice(0, 24).map((item) => (
           <div
             key={item.name}
             className="hover:bg- flex items-center justify-center gap-3 bg-black px-8 py-4 transition-colors"
