@@ -9,7 +9,7 @@ export const CaseStudyContainer = ({ children }: { children: React.ReactNode }) 
       transition={{ ease: "easeInOut", duration: 1 }}
       viewport={{ once: true }}
     >
-      <div className="mx-auto max-w-4xl justify-between py-4 lg:flex">{children}</div>
+      <div className="justify-between py-4 lg:flex">{children}</div>
     </m.section>
   )
 }
