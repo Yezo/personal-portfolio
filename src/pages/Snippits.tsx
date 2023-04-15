@@ -13,7 +13,7 @@ import { HeaderTitle } from "../components/NewHeader/HeaderTitle"
 
 export const Snippits = () => {
   return (
-    <div className="bg-gray">
+    <>
       <HeaderContainer>
         <div>
           <HeaderNav />
@@ -99,6 +99,6 @@ export const Snippits = () => {
         </CaseStudyContainer>
       </MainContainer>
       <Footer url="https://snippits.vercel.app" title="Check out Snippits" />
-    </div>
+    </>
   )
 }

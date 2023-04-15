@@ -13,7 +13,7 @@ import { MainContainer } from "../components/MainContainer"
 
 export const AniFlux = () => {
   return (
-    <div className="bg-gray">
+    <>
       <HeaderContainer>
         <div>
           <HeaderNav />
@@ -107,6 +107,6 @@ export const AniFlux = () => {
         </CaseStudyContainer>
       </MainContainer>
       <Footer url="https://aniflux.onrender.com/" title="Check out Aniflux" />
-    </div>
+    </>
   )
 }

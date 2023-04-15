@@ -13,7 +13,7 @@ import { MainContainer } from "../components/MainContainer"
 
 export const Arkoko = () => {
   return (
-    <div className="bg-gray">
+    <>
       <HeaderContainer>
         <div>
           <HeaderNav />
@@ -128,6 +128,6 @@ export const Arkoko = () => {
         </CaseStudyContainer>
       </MainContainer>
       <Footer url="https://arkoko.vercel.app/" title="Check out Arkoko" />
-    </div>
+    </>
   )
 }

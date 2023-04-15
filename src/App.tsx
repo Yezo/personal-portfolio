@@ -7,13 +7,15 @@ import { Snippits } from "./pages/Snippits"
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />}></Route>
-      <Route path="/about" element={<About />}></Route>
-      <Route path="/project/arkoko" element={<Arkoko />}></Route>
-      <Route path="/project/aniflux" element={<AniFlux />}></Route>
-      <Route path="/project/snippits" element={<Snippits />}></Route>
-    </Routes>
+    <div className="bg-gray">
+      <Routes>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/project/arkoko" element={<Arkoko />}></Route>
+        <Route path="/project/aniflux" element={<AniFlux />}></Route>
+        <Route path="/project/snippits" element={<Snippits />}></Route>
+      </Routes>
+    </div>
   )
 }
 

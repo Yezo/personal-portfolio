@@ -15,7 +15,7 @@ import { MainContainer } from "../components/MainContainer"
 
 export const HomePage = () => {
   return (
-    <div className="bg-gray">
+    <>
       <HeaderContainer>
         <div>
           <HeaderNav />
@@ -130,6 +130,6 @@ export const HomePage = () => {
         </section>
       </MainContainer>
       <Footer url="mailto:kvo.codes@gmail.com" title="kvo.codes@gmail.com" />
-    </div>
+    </>
   )
 }
