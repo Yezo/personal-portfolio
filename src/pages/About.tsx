@@ -209,10 +209,10 @@ export const About = () => {
                 <div className="flex min-w-[15rem] flex-col gap-4">
                   <h4 className="font-faustina text-lg">🕹️ Video Games</h4>
                   <ul className="space-y-2 font-inter text-sm opacity-[0.85]">
-                    <li>Lost Ark</li>
                     <li>League of Legends</li>
+                    <li>Oldschool Runescape</li>
+                    <li>Lost Ark</li>
                     <li>Yugioh MD</li>
-                    <li>Diablo IV</li>
                   </ul>
                 </div>
                 <div className="flex min-w-[15rem] flex-col gap-4">
