@@ -4,6 +4,7 @@ import { CaseStudyContainer } from "../components/CaseStudy/CaseStudyContainer"
 import { CaseTextContainer } from "../components/CaseStudy/CaseTextContainer"
 import { ColorsContainer } from "../components/CaseStudy/ColorsContainer"
 import { Footer } from "../components/Footer/Footer"
+import { MainContainer } from "../components/MainContainer"
 import { HeaderContainer } from "../components/NewHeader/HeaderContainer"
 import { HeaderImage } from "../components/NewHeader/HeaderImage"
 import { HeaderNav } from "../components/NewHeader/HeaderNav"
@@ -29,7 +30,7 @@ export const Snippits = () => {
         <HeaderScrollIndicator></HeaderScrollIndicator>
       </HeaderContainer>
 
-      <main className="mx-auto max-w-4xl bg-gray pt-20 pb-20">
+      <MainContainer>
         <CaseStudyContainer>
           <CaseHeading index="01">Product Conception</CaseHeading>
           <CaseTextContainer>
@@ -96,7 +97,7 @@ export const Snippits = () => {
             </CaseParagraph>
           </CaseTextContainer>
         </CaseStudyContainer>
-      </main>
+      </MainContainer>
       <Footer url="https://snippits.vercel.app" title="Check out Snippits" />
     </div>
   )

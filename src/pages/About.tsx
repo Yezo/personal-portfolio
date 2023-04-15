@@ -6,6 +6,7 @@ import { HeaderImage } from "../components/NewHeader/HeaderImage"
 import { HeaderNav } from "../components/NewHeader/HeaderNav"
 import { HeaderScrollIndicator } from "../components/NewHeader/HeaderScrollIndicator"
 import { HeaderTitle } from "../components/NewHeader/HeaderTitle"
+import { MainContainer } from "../components/MainContainer"
 
 export const About = () => {
   return (
@@ -25,7 +26,7 @@ export const About = () => {
         <HeaderScrollIndicator></HeaderScrollIndicator>
       </HeaderContainer>
 
-      <main className="mx-auto max-w-4xl bg-gray pt-20 pb-20">
+      <MainContainer>
         <section className="divide-y divide-stone-300 px-8" id="projects">
           <m.div
             className="flex flex-col gap-4 sm:flex-row sm:gap-40"
@@ -228,7 +229,7 @@ export const About = () => {
             </div>
           </m.div>
         </section>
-      </main>
+      </MainContainer>
       <Footer url="mailto:kvo.codes@gmail.com" title="kvo.codes@gmail.com" />
     </div>
   )

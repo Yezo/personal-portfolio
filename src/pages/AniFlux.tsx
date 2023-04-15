@@ -9,6 +9,7 @@ import { HeaderImage } from "../components/NewHeader/HeaderImage"
 import { HeaderNav } from "../components/NewHeader/HeaderNav"
 import { HeaderScrollIndicator } from "../components/NewHeader/HeaderScrollIndicator"
 import { HeaderTitle } from "../components/NewHeader/HeaderTitle"
+import { MainContainer } from "../components/MainContainer"
 
 export const AniFlux = () => {
   return (
@@ -29,7 +30,7 @@ export const AniFlux = () => {
         <HeaderScrollIndicator></HeaderScrollIndicator>
       </HeaderContainer>
 
-      <main className="mx-auto max-w-4xl bg-gray pt-20 pb-20">
+      <MainContainer>
         <CaseStudyContainer>
           <CaseHeading index="01">Product Conception</CaseHeading>
           <CaseTextContainer>
@@ -104,7 +105,7 @@ export const AniFlux = () => {
             </CaseParagraph>
           </CaseTextContainer>
         </CaseStudyContainer>
-      </main>
+      </MainContainer>
       <Footer url="https://aniflux.onrender.com/" title="Check out Aniflux" />
     </div>
   )

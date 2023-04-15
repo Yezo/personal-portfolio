@@ -11,6 +11,7 @@ import { HeaderScrollIndicator } from "../components/NewHeader/HeaderScrollIndic
 import { SKILLS } from "../components/Skillset/Data"
 import { NavIcon } from "../components/NewHeader/NavIcon"
 import { LocalButton } from "../components/Buttons/LocalButton"
+import { MainContainer } from "../components/MainContainer"
 
 export const HomePage = () => {
   return (
@@ -98,7 +99,7 @@ export const HomePage = () => {
         </div>
       </motion.section>
 
-      <main className="mx-auto max-w-4xl bg-gray pt-20 pb-20">
+      <MainContainer>
         <section className="divide-y divide-stone-300" id="projects">
           <ProjectSection
             title="Arkoko"
@@ -127,7 +128,7 @@ export const HomePage = () => {
             getStack={getSnippitsStack}
           ></ProjectSection>
         </section>
-      </main>
+      </MainContainer>
       <Footer url="mailto:kvo.codes@gmail.com" title="kvo.codes@gmail.com" />
     </div>
   )

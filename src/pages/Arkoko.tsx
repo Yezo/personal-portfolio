@@ -9,6 +9,7 @@ import { HeaderNav } from "../components/NewHeader/HeaderNav"
 import { HeaderScrollIndicator } from "../components/NewHeader/HeaderScrollIndicator"
 import { HeaderTitle } from "../components/NewHeader/HeaderTitle"
 import { HeaderImage } from "../components/NewHeader/HeaderImage"
+import { MainContainer } from "../components/MainContainer"
 
 export const Arkoko = () => {
   return (
@@ -29,7 +30,7 @@ export const Arkoko = () => {
         <HeaderScrollIndicator></HeaderScrollIndicator>
       </HeaderContainer>
 
-      <main className="mx-auto max-w-4xl bg-gray pt-20 pb-20">
+      <MainContainer>
         <CaseStudyContainer>
           <CaseHeading index="01">Product Conception</CaseHeading>
           <CaseTextContainer>
@@ -125,7 +126,7 @@ export const Arkoko = () => {
             </CaseParagraph>
           </CaseTextContainer>
         </CaseStudyContainer>
-      </main>
+      </MainContainer>
       <Footer url="https://arkoko.vercel.app/" title="Check out Arkoko" />
     </div>
   )
