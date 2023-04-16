@@ -10,6 +10,7 @@ import { HeaderScrollIndicator } from "../components/NewHeader/HeaderScrollIndic
 import { HeaderTitle } from "../components/NewHeader/HeaderTitle"
 import { HeaderImage } from "../components/NewHeader/HeaderImage"
 import { MainContainer } from "../components/MainContainer"
+import { ColorsBox } from "../components/CaseStudy/ColorsBox"
 
 export const Arkoko = () => {
   return (
@@ -32,83 +33,72 @@ export const Arkoko = () => {
 
       <MainContainer>
         <CaseStudyContainer>
-          <CaseHeading index="01">Product Conception</CaseHeading>
+          <CaseHeading index="01">The Problem</CaseHeading>
           <CaseTextContainer>
             <CaseParagraph>
-              Arkoko was created with the objective to help alleviate the problem plaguing MMORPG
-              players: too much information to process while playing the game. Users want to be as
-              efficient in the least amount of time as possible but many players end up spending
-              more time on calculating what's efficient to do instead of actually playing the game.
-              All games are built upon numbers and statistics and is the driving force behind
-              Arkoko.
-            </CaseParagraph>
-            <CaseParagraph>
-              Many games have a lot of online resources to help new and existing players learn more
-              about the game but many websites lack certain features that others have and
-              vice-versa. Arkoko aims to implement as many features as possible.
+              People enjoy playing video games but they tend to dislike figuring out efficient
+              methods or calculating various outcomes themselves. It's tedious, time-consuming, and
+              it ultimately takes away from the precious time they could have spent playing the
+              video game in the first place.
             </CaseParagraph>
           </CaseTextContainer>
         </CaseStudyContainer>
 
         <CaseStudyContainer>
-          <CaseHeading index="02">Colors</CaseHeading>
+          <CaseHeading index="02">The Solution</CaseHeading>
+          <CaseTextContainer>
+            <CaseParagraph>
+              Arkoko aims to alleviate this situation by providing an all-in-one pitstop for
+              calculators, guides, tools, and resources for the online MMORPG "Lost Ark." Players no
+              longer need to spend minutes themselves calculating whether or not an item is
+              profitable to craft. The tools that Arkoko provides calculates everything for the user
+              when provided with minimal input values.
+            </CaseParagraph>
+          </CaseTextContainer>
+        </CaseStudyContainer>
+
+        <CaseStudyContainer>
+          <CaseHeading index="03">Colors</CaseHeading>
 
           <CaseParagraph>
             <ColorsContainer>
-              <div className="grid">
-                <div
-                  className={`col-start-1 row-start-1 h-32 w-24 bg-arkokoColorOne sm:w-32`}
-                ></div>
-                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
-                  #3F4246
-                </p>
-              </div>
-              <div className="grid">
-                <div
-                  className={`col-start-1 row-start-1 h-32 w-24 bg-arkokoColorTwo sm:w-32`}
-                ></div>
-                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
-                  #1C1F26
-                </p>
-              </div>
-              <div className="grid">
-                <div
-                  className={`col-start-1 row-start-1 h-32 w-24 bg-arkokoColorThree sm:w-32`}
-                ></div>
-                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-[#15181D]">
-                  #C2C2CC
-                </p>
-              </div>
+              <ColorsBox bgColor="bg-arkokoColorOne" textColor="#3F4246" dark={true}></ColorsBox>
+              <ColorsBox bgColor="bg-arkokoColorTwo" textColor="#1C1F26" dark={true}></ColorsBox>
+              <ColorsBox bgColor="bg-arkokoColorThree" textColor="#C2C2CC" dark={false}></ColorsBox>
             </ColorsContainer>
           </CaseParagraph>
         </CaseStudyContainer>
 
         <CaseStudyContainer>
-          <CaseHeading index="03">Challenges</CaseHeading>
+          <CaseHeading index="04">Challenges</CaseHeading>
           <CaseTextContainer>
+            <CaseParagraph>
+              Arkoko was a project I've wanted to create ever since I started my first line of code.
+              I knew this was a goal I wanted to achieve and the process of developing it was quite
+              the hurdle. Ultimately, it has gone through many different versions, both from a
+              technological standpoint and a visual one. Designing a website from scratch was
+              definitely difficult but I am confident the current look of Arkoko is modern and
+              unique. The in-game tools I've developed are unique and it was a challenge getting the
+              calculators to work how I wanted them to without any guidance or documentation to
+              refer to. However, it is without a doubt twice as rewarding when I figure out the
+              problems myself and I think that is what keeps me working on Arkoko as my main passion
+              project.
+            </CaseParagraph>
             <CaseParagraph>
               From a technical standpoint, the biggest challenge was definitely the Oreha Crafting
               Calculator. The data structures involved were complicated since they used nested
               objects for the recipes. It was also difficult managing data coming from the local API
               as well as from the LostArkMarketOnline API. The code implementation for this specific
-              tool leaves much to be desired. I believe if I were to re-do the code for this, it
-              would be refactored into much cleaner code. My biggest takeaway from programming this
-              would have to be the merging and manipulation of nested array of objects.
-            </CaseParagraph>
-            <CaseParagraph>
-              This is the biggest project I've done and it is definitely an ambitious one as a
-              junior web developer. It has a lot of working individual parts and has more content
-              than most websites. Determining how I should tackle each challenge proves difficult
-              since every feature of Arkoko is so unique that searching for answers to specific
-              problems I face while coding seems almost an impossible task. However, it is without a
-              doubt twice as rewarding when I figure out the problems myself and I think that is
-              what keeps me working on Arkoko as my main passion project.
+              tool leaves much to be desired. I would definitely refactor the code into a more
+              elegant solution the next time I re-visit that component. My biggest takeaway from
+              programming this would have to be the merging and manipulation of nested array of
+              objects.
             </CaseParagraph>
           </CaseTextContainer>
         </CaseStudyContainer>
 
         <CaseStudyContainer>
-          <CaseHeading index="04">Areas of improvement</CaseHeading>
+          <CaseHeading index="05">Areas of improvement</CaseHeading>
           <CaseTextContainer>
             <CaseParagraph>
               Arkoko has many features and a majority of its content comes in the form of tabular
@@ -119,10 +109,12 @@ export const Arkoko = () => {
               Mari's Shop page.
             </CaseParagraph>
             <CaseParagraph>
-              As mentioned before, this is a large project with a lot of components and pages. One
-              regret I have is not having a design system in place before starting. Everything would
-              be more consistent had I determined which colors, fonts, and designs of components I'd
-              be using from the very start.
+              The website itself fetches a lot of data from multiple sources. It pulls data from our
+              own API that has stored data in MongoDB and it also takes in data from an external
+              API. It would be a huge improvement to the codebase as well as the developer
+              experience if I added a state management library like Redux, SWR, or Zustand. To
+              further abstract the component logic from the view logic, it would be wise to create
+              custom hooks for many of the components.
             </CaseParagraph>
           </CaseTextContainer>
         </CaseStudyContainer>

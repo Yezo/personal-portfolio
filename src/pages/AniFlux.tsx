@@ -10,6 +10,7 @@ import { HeaderNav } from "../components/NewHeader/HeaderNav"
 import { HeaderScrollIndicator } from "../components/NewHeader/HeaderScrollIndicator"
 import { HeaderTitle } from "../components/NewHeader/HeaderTitle"
 import { MainContainer } from "../components/MainContainer"
+import { ColorsBox } from "../components/CaseStudy/ColorsBox"
 
 export const AniFlux = () => {
   return (
@@ -32,76 +33,65 @@ export const AniFlux = () => {
 
       <MainContainer>
         <CaseStudyContainer>
-          <CaseHeading index="01">Product Conception</CaseHeading>
+          <CaseHeading index="01">The Problem</CaseHeading>
           <CaseTextContainer>
             <CaseParagraph>
-              The problem I wanted AniFlux to help solve was that there were a lot of anime-related
-              websites that had outdated designs and bloated with unnecessary content. It became
-              difficult to navigate and digest concise information about specific animes. The goal
-              of this web application is to be able to convey everything about an anime in the least
-              amount of time as possible while visually pleasing the eyes of its users.
+              There are a lot of anime and manga related websites out there but a large majority of
+              them do not have a modern experience. It is often bloated with unnecessary information
+              making it difficult to digest the details of whatever it is the user is trying to
+              read. As a byproduct, it can be hard to navigate around the website as well.
             </CaseParagraph>
           </CaseTextContainer>
         </CaseStudyContainer>
 
         <CaseStudyContainer>
-          <CaseHeading index="02">Colors</CaseHeading>
+          <CaseHeading index="02">The Solution</CaseHeading>
+          <CaseTextContainer>
+            <CaseParagraph>
+              Aniflux is my rendition of an anime/manga website built with modern technologies with
+              modern visuals and a pleasant user experience. Many of the bloat is removed and what
+              remains is the important details regarding a specific anime or manga. Navigation is
+              intuitive and provides many of the resources to allow a user to find exactly which
+              anime or manga they're looking for.
+            </CaseParagraph>
+          </CaseTextContainer>
+        </CaseStudyContainer>
 
+        <CaseStudyContainer>
+          <CaseHeading index="03">Colors</CaseHeading>
           <CaseParagraph>
             <ColorsContainer>
-              <div className="grid">
-                <div className={`col-start-1 row-start-1 h-32 w-24 bg-[#EDF1F5] sm:w-32`}></div>
-                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-black">
-                  #EDF1F5
-                </p>
-              </div>
-              <div className="grid">
-                <div className={`col-start-1 row-start-1 h-32 w-24 bg-[#7B8EA1] sm:w-32`}></div>
-                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-black">
-                  #7B8EA1
-                </p>
-              </div>
-              <div className="grid">
-                <div className={`col-start-1 row-start-1 h-32 w-24 bg-[#2d2d29] sm:w-32`}></div>
-                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
-                  #2D2D29
-                </p>
-              </div>
-              <div className="grid">
-                <div className={`col-start-1 row-start-1 h-32 w-24 bg-[#3480EA] sm:w-32`}></div>
-                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
-                  #3480EA
-                </p>
-              </div>
+              <ColorsBox bgColor="bg-anifluxColorOne" textColor="#EDF1F5" dark={false}></ColorsBox>
+              <ColorsBox bgColor="bg-anifluxColorTwo" textColor="#7B8EA1" dark={false}></ColorsBox>
+              <ColorsBox bgColor="bg-anifluxColorThree" textColor="#2D2D29" dark={true}></ColorsBox>
+              <ColorsBox bgColor="bg-anifluxColorFour" textColor="#3480EA" dark={true}></ColorsBox>
             </ColorsContainer>
           </CaseParagraph>
         </CaseStudyContainer>
 
         <CaseStudyContainer>
-          <CaseHeading index="03">Challenges</CaseHeading>
+          <CaseHeading index="04">Challenges</CaseHeading>
           <CaseTextContainer>
             <CaseParagraph>
-              Originally, there were pagination features for some pages on the website. However, I
-              quickly realized hand-coding pagination from scratch was a nightmare. The pagination
-              did work but I ultimately scrapped the idea and ended up displaying all the data at
-              once on a single page. Perhaps less clicks is a better user experience.
+              Unfortunately, the JikanAPI has some shortcomings despite providing a ton of data
+              about anime. It is missing some data points for obscure anime. The API is also free
+              which results in rate-limiting to prevent too many requests. Users that visit AniFlux
+              may experience missing data due to being rate-limited. Despite being such a great API
+              resource, it was rather difficult to develop with it since I would often run into 429
+              Too Many Requests errors while testing out components. As such, it's difficult to
+              populate pages with multiple pieces of content from the API since you cannot exceed 3
+              requests a second.
             </CaseParagraph>
           </CaseTextContainer>
         </CaseStudyContainer>
 
         <CaseStudyContainer>
-          <CaseHeading index="04">Areas of improvement</CaseHeading>
+          <CaseHeading index="05">Areas of improvement</CaseHeading>
           <CaseTextContainer>
             <CaseParagraph>
-              Unfortunately, the JikanAPI has some shortcomings despite providing a ton of data
-              about anime. It is missing some data points for obscure anime. The API is also free
-              and has rate-limiting in place to prevent too many requests. Users that visit AniFlux
-              may experience missing data due to being rate-limited.
-            </CaseParagraph>
-            <CaseParagraph>
-              Despite the shortcomings, JikanAPI offers a large variety of endpoints for developers
-              to play with. A lot of improvements can be made such as adding features for manga,
-              recommendations, reviews, and many others.
+              The Jikan API has many endpoints to fetch data from. Aniflux can definitely be
+              improved by adding more links to more content including recommendations for different
+              anime and manga, fetching reviews, and even schedules for currently airing anime.
             </CaseParagraph>
           </CaseTextContainer>
         </CaseStudyContainer>

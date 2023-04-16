@@ -2,6 +2,7 @@ import { CaseHeading } from "../components/CaseStudy/CaseHeading"
 import { CaseParagraph } from "../components/CaseStudy/CaseParagraph"
 import { CaseStudyContainer } from "../components/CaseStudy/CaseStudyContainer"
 import { CaseTextContainer } from "../components/CaseStudy/CaseTextContainer"
+import { ColorsBox } from "../components/CaseStudy/ColorsBox"
 import { ColorsContainer } from "../components/CaseStudy/ColorsContainer"
 import { Footer } from "../components/Footer/Footer"
 import { MainContainer } from "../components/MainContainer"
@@ -32,61 +33,60 @@ export const Snippits = () => {
 
       <MainContainer>
         <CaseStudyContainer>
-          <CaseHeading index="01">Product Conception</CaseHeading>
+          <CaseHeading index="01">The Problem</CaseHeading>
           <CaseTextContainer>
             <CaseParagraph>
-              I was forgetting a lot of basic code syntax while learning how to program as do many
-              other coders. This web application is meant to serve as a mini cheatsheet filled with
-              code excerpts and other tips and tricks I've found over the course of teaching myself
-              how to code as a web developer.
+              Newer and even veteran developers often forget basic syntax while programming. Often
+              times, a quick google search can consume more time than needed. What if there was a
+              single repository for useful code snippets for our favorite programming languages?
             </CaseParagraph>
           </CaseTextContainer>
         </CaseStudyContainer>
 
         <CaseStudyContainer>
-          <CaseHeading index="02">Colors</CaseHeading>
+          <CaseHeading index="02">The Solution</CaseHeading>
+          <CaseTextContainer>
+            <CaseParagraph>
+              Snippits serves as a mini cheatsheet filled with code snippets and other tips and
+              tricks I've found over the course of self teaching myself how to code as a software
+              engineer. The code snippits includes CSS, Javascript, TypeScript, React, and even
+              includes useful Git commands.
+            </CaseParagraph>
+          </CaseTextContainer>
+        </CaseStudyContainer>
 
+        <CaseStudyContainer>
+          <CaseHeading index="03">Colors</CaseHeading>
           <CaseParagraph>
             <ColorsContainer>
-              <div className="grid">
-                <div className={`col-start-1 row-start-1 h-36 w-24 bg-[#F1EFE9] sm:w-36`}></div>
-                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-black">
-                  #F1EFE9
-                </p>
-              </div>
-              <div className="grid">
-                <div className={`col-start-1 row-start-1 h-36 w-24 bg-[#20232b] sm:w-36`}></div>
-                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
-                  #20232B
-                </p>
-              </div>
-              <div className="grid">
-                <div className={`col-start-1 row-start-1 h-36 w-24 bg-[#282828] sm:w-36`}></div>
-                <p className="col-start-1 row-start-1 self-end justify-self-end p-2 font-inter text-sm font-semibold tracking-tight text-white">
-                  #282828
-                </p>
-              </div>
+              <ColorsBox bgColor="bg-snippitsColorOne" textColor="#F1EFE9" dark={false}></ColorsBox>
+              <ColorsBox bgColor="bg-snippitsColorTwo" textColor="#20232B" dark={true}></ColorsBox>
+              <ColorsBox
+                bgColor="bg-snippitsColorThree"
+                textColor="#282828"
+                dark={true}
+              ></ColorsBox>
             </ColorsContainer>
           </CaseParagraph>
         </CaseStudyContainer>
 
         <CaseStudyContainer>
-          <CaseHeading index="03">Challenges</CaseHeading>
+          <CaseHeading index="04">Challenges</CaseHeading>
           <CaseTextContainer>
             <CaseParagraph>
               Between in-depth articles, blog posts, or a grid of random snippets, it was rather
               challenging trying to figure out which format I wanted the website to use. The idea of
-              code snippets was for it to be easily accessible and fast to look up on a whim. "
-              firstParagraphTwo="In-depth articles didn't satisfy either of those although articles
-              and blog posts would have allowed me to go a lot more indepth. Ultimately, I went with
-              dropdown selections for the code snippets and added a mini description to help
-              facilitate further explanation if needed.
+              code snippets was for it to be easily accessible and fast to look up on a whim.
+              In-depth articles didn't satisfy either of those although articles and blog posts
+              would have allowed me to go a lot more indepth. Ultimately, I went with dropdown
+              selections for the code snippets and added a mini description to help facilitate
+              further explanation if needed.
             </CaseParagraph>
           </CaseTextContainer>
         </CaseStudyContainer>
 
         <CaseStudyContainer>
-          <CaseHeading index="04">Areas of improvement</CaseHeading>
+          <CaseHeading index="05">Areas of improvement</CaseHeading>
           <CaseTextContainer>
             <CaseParagraph>
               Snippits can be expanded to allow users from across the world to enter in their own
