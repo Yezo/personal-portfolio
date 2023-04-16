@@ -20,7 +20,7 @@ export const HomePage = () => {
         <div>
           <HeaderNav />
           <HeaderTitle subtitle="Hey, call me Kev" orientation="left">
-            Software engineer at work - {<br />}
+            Software developer at work - {<br />}
             digital{" "}
             <span className="relative animate-text  bg-gradient-to-r from-teal-500  via-purple-500  to-orange-500  bg-clip-text text-transparent">
               designer
@@ -54,10 +54,10 @@ export const HomePage = () => {
             at heart.
           </HeaderTitle>
           <HeaderDescription>
-            My passion thrives in frontend web development where I carefully build mobile-first
-            responsive designs. Currently focused on honing my craft in order to forge better and
-            unforgettable user experiences. I'm looking to join a team of creative designers and
-            developers. If you think I am a good fit, let's partner up.
+            Full-stack software developer that specializes in converting creative ideas onto a
+            digital canvas. My primary objective is honing my skillset in order to craft innovative
+            and modern web experiences. I'm open to opportunities and am looking to join with a
+            group of creative developers. Let's team up and create something amazing.
           </HeaderDescription>
           <m.div
             className="my-8 flex gap-3"
