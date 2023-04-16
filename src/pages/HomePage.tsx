@@ -12,6 +12,7 @@ import { SKILLS } from "../components/Skillset/Data"
 import { NavIcon } from "../components/NewHeader/NavIcon"
 import { LocalButton } from "../components/Buttons/LocalButton"
 import { MainContainer } from "../components/MainContainer"
+import { SmallProjectSection } from "../components/SmallProjectSection"
 
 export const HomePage = () => {
   return (
@@ -127,6 +128,7 @@ export const HomePage = () => {
             imageLink="/snippits.webp"
             getStack={getSnippitsStack}
           ></ProjectSection>
+          <SmallProjectSection></SmallProjectSection>
         </section>
       </MainContainer>
       <Footer url="mailto:kvo.codes@gmail.com" title="kvo.codes@gmail.com" />
