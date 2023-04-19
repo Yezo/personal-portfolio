@@ -57,8 +57,8 @@ export const HomePage = () => {
           <HeaderDescription>
             Full-stack software developer that specializes in converting creative ideas onto a
             digital canvas. My primary objective is honing my skillset in order to craft innovative
-            and modern web experiences. I'm open to opportunities and am looking to join with a
-            group of creative developers. Let's team up and create something amazing.
+            and modern web experiences. I'm open to opportunities and am looking to join a group of
+            creative developers. Let's team up and create something amazing.
           </HeaderDescription>
           <m.div
             className="my-8 flex gap-3"
